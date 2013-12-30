@@ -10,6 +10,12 @@ namespace HD.Helper
 {
     public static class XmlHelper
     {
+        /// <summary>
+        /// 将一个对象序列化为流中
+        /// </summary>
+        /// <param name="stream">存放对象序列化后的流</param>
+        /// <param name="o">要序列化的对象</param>
+        /// <param name="encoding">编码格式</param>
         private static void XmlSerializeInternal(Stream stream, object o, Encoding encoding)
         {
             if (o == null)
@@ -110,5 +116,68 @@ namespace HD.Helper
             string xml = File.ReadAllText(path, encoding);
             return XmlDeserialize<T>(xml, encoding);
         }
+
+        #region 得到XML节点的文本
+        /// <summary>
+        /// 得到XML节点的文本
+        /// </summary>
+        /// <param name="p_xnParent">父节点</param>
+        /// <param name="p_strNodeName">节点名称</param>
+        /// <returns>XML节点的文本</returns>
+        public static string GetXmlNodeText(XmlNode p_xnParent, string p_strNodeName)
+        {
+            XmlNode xnChild = p_xnParent.SelectSingleNode(p_strNodeName);
+
+            if (xnChild != null)//节点有数据
+            {
+                return xnChild.InnerText;
+            }
+            else
+            {
+                return "";
+            }
+        }
+        #endregion
+
+        #region 得到XML节点的属性值
+        /// <summary>
+        /// 得到XML节点的属性值
+        /// </summary>
+        /// <param name="p_xnParent">父节点</param>
+        /// <param name="p_strNodeName">节点名称</param>
+        /// <param name="p_strAttributeName">属性名称</param>
+        /// <returns>XML节点的属性值</returns>
+        public static string GetXmlNodeAttribute(XmlNode p_xnParent, string p_strNodeName, string p_strAttributeName)
+        {
+            //判断该节点是否存在该属性
+            if (p_xnParent.SelectSingleNode(p_strNodeName + "[@name='" + p_strAttributeName + "']") != null)
+            {
+                return p_xnParent.SelectSingleNode(p_strNodeName).Attributes[p_strAttributeName].Value;
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        /// <summary>
+        /// 得到XML节点的属性值
+        /// </summary>
+        /// <param name="p_xnNode">节点对象</param>
+        /// <param name="p_strAttributeName">属性名称</param>
+        /// <returns>XML节点的属性值</returns>
+        public static string GetXmlNodeAttribute(XmlNode p_xnNode, string p_strAttributeName)
+        {
+            //判断该节点是否存在该属性
+            if (p_xnNode.Attributes[p_strAttributeName] != null)
+            {
+                return p_xnNode.Attributes[p_strAttributeName].Value;
+            }
+            else
+            {
+                return "";
+            }
+        }
+        #endregion
     }
 }
