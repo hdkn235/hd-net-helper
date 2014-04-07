@@ -77,13 +77,13 @@
     <Compile Include="DEncrypt\DEncrypt.cs" />
     <Compile Include="DEncrypt\DESEncrypt.cs" />
     <Compile Include="DEncrypt\HashEncode.cs" />
+    <Compile Include="DEncrypt\MD5Helper.cs" />
     <Compile Include="DEncrypt\RSACryption.cs" />
     <Compile Include="ExcelHelper.cs" />
     <Compile Include="HTMLHelper.cs" />
     <Compile Include="HttpProc.cs" />
     <Compile Include="INIFile.cs" />
     <Compile Include="MailSender.cs" />
-    <Compile Include="MD5Helper.cs" />
     <Compile Include="MessageBox.cs" />
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -97,10 +97,8 @@
     <Compile Include="StringPlus.cs" />
     <Compile Include="TimeParser.cs" />
     <Compile Include="UrlOper.cs" />
+    <Compile Include="Validator.cs" />
     <Compile Include="XmlHelper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DEncrypt\vssver2.scc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

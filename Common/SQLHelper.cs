@@ -5,6 +5,7 @@ using System.Text;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace HD.Common
 {
@@ -199,6 +200,80 @@ namespace HD.Common
             return GetDataTable(sql, CommandType.StoredProcedure, para);
         }
 
+        #region 返回组合的查询条件
+        /// <summary>
+        /// 返回组合的查询条件
+        /// </summary>
+        /// <param name="i"> 1 and = ,2 or = ,3  and like ,4  or like, 5 时间段</param>
+        /// <param name="columnName"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static string BackSearchReson(int i, string columnName, string value)
+        {
+            string reson = "";
+            if (columnName != string.Empty && value != string.Empty)
+            {
+                switch (i)
+                {
+                    case 1:
+                        reson += " and " + columnName + "='" + value + "'";
+                        break;
+                    case 2:
+                        reson += " or " + columnName + "='" + value + "'";
+                        break;
+                    case 3:
+                        reson += " and " + columnName + " like'%" + value + "%'";
+                        break;
+                    case 4:
+                        reson += " or " + columnName + " like'%" + value + "%'";
+                        break;
+                    case 5:
+                        reson += " and (" + columnName + ">'" + Convert.ToDateTime(value).ToString() + "' and " + columnName + "<'" + Convert.ToDateTime(value).AddDays(1).ToString() + "')";
+                        break;
+                }
+            }
+            return reson;
+        }
+        #endregion
+
+        #region 过滤字符串,过滤掉从输入框输入的一些非法字符，防注入！
+        public static string InputText(string text, int maxLength)
+        {
+            text = text.Trim();
+            if (text.Length == 0)
+                return string.Empty;
+            if (text.Length > maxLength)
+                text = text.Substring(0, maxLength);
+            text = Regex.Replace(text, "(<[b|B][r|R]/*>)+|(<[p|P](.|\\n)*?>)", "\n");//<br/>
+            text = Regex.Replace(text, "<(.|\\n)*?>", string.Empty);//any other tags
+            text = text.Replace("'", "");
+            text = text.Replace(" ", "");
+            text = text.Replace("%", "");
+            text = text.Replace("!", "");
+            text = text.Replace("~", "");
+            text = text.Replace("`", "");
+            text = text.Replace("#", "");
+            text = text.Replace("$", "");
+            text = text.Replace("^", "");
+            text = text.Replace("&", "");
+            text = text.Replace("*", "");
+            text = text.Replace("(", "");
+            text = text.Replace(")", "");
+            text = text.Replace("{", "");
+            text = text.Replace("}", "");
+            text = text.Replace("[", "");
+            text = text.Replace("]", "");
+            text = text.Replace(",", "");
+            text = text.Replace("/", "");
+            text = text.Replace("@", "");
+            text = text.Replace("-", "");
+            text = text.Replace("=", "");
+            text = text.Replace("+", "");
+            text = text.Replace("|", "");
+            text = text.Replace(".", "");
+            return text;
+        }
+        #endregion
     }
 
     #region 连接字符串

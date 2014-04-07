@@ -65,8 +65,7 @@ namespace HD.Common
 
         public void Send(string subject, string body)
         {
-
-            List<string> toList = StringPlus.GetSubStringList(StringPlus.ToDBC(to), ',');
+            List<string> toList = StringPlus.GetStrArray(StringPlus.ToDBC(to), ',');
             OpenSmtp.Mail.Smtp smtp = new OpenSmtp.Mail.Smtp(smtpServer, userName, pwd, smtpPort);
             foreach (string s in toList)
             {

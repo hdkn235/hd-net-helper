@@ -26,3 +26,17 @@ D:\Projects\Helper\Common\bin\Release\NPOI.xml
 D:\Projects\Helper\Common\obj\Release\ResolveAssemblyReference.cache
 D:\Projects\Helper\Common\obj\Release\HD.Common.dll
 D:\Projects\Helper\Common\obj\Release\HD.Common.pdb
+E:\Projects\Helper\Common\obj\Release\ResolveAssemblyReference.cache
+E:\Projects\Helper\Common\bin\Release\HD.Common.dll
+E:\Projects\Helper\Common\bin\Release\HD.Common.pdb
+E:\Projects\Helper\Common\bin\Release\ChnCharInfo.dll
+E:\Projects\Helper\Common\bin\Release\COM.Excel.dll
+E:\Projects\Helper\Common\bin\Release\Ionic.Zip.dll
+E:\Projects\Helper\Common\bin\Release\LTP.Accounts.dll
+E:\Projects\Helper\Common\bin\Release\Microsoft.Web.UI.WebControls.dll
+E:\Projects\Helper\Common\bin\Release\NPOI.dll
+E:\Projects\Helper\Common\bin\Release\OpenSmtp.dll
+E:\Projects\Helper\Common\bin\Release\OWC10Chart.dll
+E:\Projects\Helper\Common\bin\Release\NPOI.xml
+E:\Projects\Helper\Common\obj\Release\HD.Common.dll
+E:\Projects\Helper\Common\obj\Release\HD.Common.pdb

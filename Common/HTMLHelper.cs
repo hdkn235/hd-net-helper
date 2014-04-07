@@ -262,6 +262,35 @@ namespace HD.Common
         }
         #endregion
 
+        #region 删除文本中带的HTML标记
+        /// <summary>
+        /// 删除文本中带的HTML标记
+        /// </summary>
+        /// <param name="InString">输入要删除带HTML的字符串</param>    
+        /// <returns>返回处理过的字符串</returns>
+        public static string DelHtmlCode(string InString)
+        {
+            string strTemp = InString;
+            int htmlBeginNum = 0;
+            int htmlEndNum = 0;
+            while (strTemp.Contains("<"))
+            {
+                if (!strTemp.Contains(">")) { break; }    //当字符串内不包含">"时退出循环
+                htmlBeginNum = strTemp.IndexOf("<");
+                htmlEndNum = strTemp.IndexOf(">");
+                //删除从"<"到">"之间的所有字符串
+                strTemp = strTemp.Remove(htmlBeginNum, htmlEndNum - htmlBeginNum + 1);
+            }
+            strTemp = strTemp.Replace("\n", "");
+            strTemp = strTemp.Replace("\r", "");
+            strTemp = strTemp.Replace("\n\r", "");
+            strTemp = strTemp.Replace("&nbsp;", "");
+            strTemp = strTemp.Replace(" ", "");
+            strTemp = strTemp.Trim();
+            return strTemp;
+        }
+        #endregion
+
         #region 匹配页面的链接
         /// <summary>
         /// 获取页面的链接正则
@@ -431,6 +460,81 @@ namespace HD.Common
         public static string JS(string jsPath, System.Web.UI.Page p)
         {
             return @"<script type=""text/javascript"" src=""" + p.ResolveUrl(jsPath) + @"""></script>" + "\r\n";
+        }
+        #endregion
+
+        #region 弹出信息\跳转
+        /// <summary>
+        /// 弹出警告信息并跳转到指定页面地址
+        /// </summary>
+        /// <param name="str">警告信息内容</param>
+        /// <param name="url">指定要跳转的页面地址</param>
+        public static void alert(string str, string url)
+        {
+            System.Web.HttpContext.Current.Response.Write("<script language='javascript'>alert('" + str + "');location.href=" + url + "</script>");
+        }
+        /// <summary>
+        /// 弹出信息 无跳转动作
+        /// </summary>
+        /// <param name="str">信息内容</param>
+        public static void erro(string str)
+        {
+            System.Web.HttpContext.Current.Response.Write("<script language='javascript'>alert('" + str + "');</script>");
+        }
+        /// <summary>
+        /// 后退一页
+        /// </summary>
+        public static void goback()
+        {
+            System.Web.HttpContext.Current.Response.Write("<script language='javascript'>history.go(-1);</script>");
+        }
+        /// <summary>
+        /// 执行js命令
+        /// </summary>
+        /// <param name="function">传入要执行的js函数[包含参数的函数]</param>
+        public static void DoJsFunction(string function)
+        {
+            System.Web.HttpContext.Current.Response.Write("<script language='javascript'>" + function + "</script>");
+        }
+        #endregion
+
+        #region 编码解码
+        /// <summary>
+        /// 解码得到url值
+        /// </summary>
+        /// <param name="str">string</param>
+        /// <returns>string</returns>
+        public static string Decode(string str)
+        {
+            return HttpContext.Current.Server.UrlDecode(str);
+        }
+        /// <summary>
+        /// 编码传入url
+        /// </summary>
+        /// <param name="str">string</param>
+        /// <returns>string</returns>
+        public static string Encode(string str)
+        {
+            return HttpContext.Current.Server.UrlEncode(str);
+        }
+        #endregion
+
+        #region 判断输入是否为空 并弹出错误信息
+        /// <summary>
+        /// 判断输入是否为空 并弹出错误信息
+        /// </summary>
+        /// <param name="str">验证内容</param>
+        /// <param name="erroStr">错误提示内容</param>
+        /// <returns>bool</returns>
+        public static bool IsEmpty(string str, string erroStr)
+        {
+            bool result = false;
+            if (string.Empty == str)
+            {
+                erro(erroStr);
+                result = true;
+            }
+            return result;
         }
         #endregion
     }
