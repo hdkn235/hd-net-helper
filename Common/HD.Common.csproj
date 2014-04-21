@@ -71,7 +71,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assistant.cs" />
     <Compile Include="ConfigHelper.cs" />
     <Compile Include="DataCache.cs" />
     <Compile Include="DEncrypt\DEncrypt.cs" />

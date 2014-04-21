@@ -12,7 +12,7 @@ namespace HD.Common
     /// </summary>
     public class UrlOper
     {
-        static System.Text.Encoding encoding = System.Text.Encoding.UTF8;
+        private static System.Text.Encoding encoding = System.Text.Encoding.UTF8;
 
         #region URL的64位编码
         public static string Base64Encrypt(string sourthUrl)
@@ -54,6 +54,7 @@ namespace HD.Common
         }
         #endregion
 
+        #region 添加URL参数
         /// <summary>
         /// 添加URL参数
         /// </summary>
@@ -70,14 +71,17 @@ namespace HD.Common
                 string eval = HttpContext.Current.Server.UrlEncode(value);
                 return String.Concat(url, "&" + paramName + "=" + eval);
             }
-        }
+        } 
+        #endregion
+
+        #region 更新URL参数
         /// <summary>
         /// 更新URL参数
         /// </summary>
         public static string UpdateParam(string url, string paramName, string value)
         {
-            string keyWord = paramName+"=";
-            int index = url.IndexOf(keyWord)+keyWord.Length;
+            string keyWord = paramName + "=";
+            int index = url.IndexOf(keyWord) + keyWord.Length;
             int index1 = url.IndexOf("&", index);
             if (index1 == -1)
             {
@@ -85,10 +89,11 @@ namespace HD.Common
                 url = string.Concat(url, value);
                 return url;
             }
-            url = url.Remove(index,index1 - index);
+            url = url.Remove(index, index1 - index);
             url = url.Insert(index, value);
             return url;
-        }
+        } 
+        #endregion
 
         #region 分析URL所属的域
         public static void GetDomain(string fromUrl, out string domain, out string subDomain)

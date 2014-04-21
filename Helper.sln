@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD.DBHelper", "DBHelper\HD.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD.Common", "Common\HD.Common.csproj", "{ED5A8CC8-3896-4538-BA09-9197B869FA18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHelper", "WebHelper\WebHelper.csproj", "{CEAD4389-C606-4B2F-88AC-6FA072CEF4FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{ED5A8CC8-3896-4538-BA09-9197B869FA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5A8CC8-3896-4538-BA09-9197B869FA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5A8CC8-3896-4538-BA09-9197B869FA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEAD4389-C606-4B2F-88AC-6FA072CEF4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEAD4389-C606-4B2F-88AC-6FA072CEF4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEAD4389-C606-4B2F-88AC-6FA072CEF4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEAD4389-C606-4B2F-88AC-6FA072CEF4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
