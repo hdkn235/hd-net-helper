@@ -42,8 +42,11 @@
       <HintPath>Lib\Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Ionic.Zip">
-      <HintPath>Lib\NPOI 1.2.5 binary and examples\bin\.net 4.0\Ionic.Zip.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>Lib\NPOI\.net 4.0\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\DLL\itextsharp.dll</HintPath>
@@ -54,8 +57,8 @@
     <Reference Include="Microsoft.Web.UI.WebControls">
       <HintPath>Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
     </Reference>
-    <Reference Include="NPOI">
-      <HintPath>Lib\NPOI 1.2.5 binary and examples\bin\.net 4.0\NPOI.dll</HintPath>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>Lib\NPOI\.net 4.0\NPOI.dll</HintPath>
     </Reference>
     <Reference Include="OpenSmtp">
       <HintPath>Lib\OpenSmtp.dll</HintPath>
@@ -67,6 +70,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -74,11 +78,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarCode\BarCodeHelper.cs" />
     <Compile Include="Cache\CacheHelper.cs" />
     <Compile Include="Calendar\CNDate.cs" />
     <Compile Include="Config\ConfigHelper.cs" />
+    <Compile Include="Page\ValidateImgPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\GridViewHelper.cs" />
+    <Compile Include="Convert\ConvertHelper.cs" />
     <Compile Include="Cookie\CookieHelper.cs" />
     <Compile Include="CSV\CsvHelper.cs" />
+    <Compile Include="Date\TimeHelper.cs" />
     <Compile Include="DEncrypt\Base64_DEncrypt.cs" />
     <Compile Include="DEncrypt\Triple_DESDEncrypt.cs" />
     <Compile Include="DEncrypt\DES_DEncrypt.cs" />
@@ -86,44 +97,60 @@
     <Compile Include="DEncrypt\Hash_DEncrypt.cs" />
     <Compile Include="DEncrypt\MD5_Encrypt.cs" />
     <Compile Include="DEncrypt\RSA_DEncrypt.cs" />
-    <Compile Include="DownLoad\DownLoadHelper.cs" />
-    <Compile Include="DownLoad\FileDown.cs" />
-    <Compile Include="NPOIHelper.cs" />
+    <Compile Include="File\DirectoryHelper.cs" />
+    <Compile Include="File\FileDownHelper.cs" />
+    <Compile Include="File\FileHelper.cs" />
+    <Compile Include="Formula\FormulaHelper.cs" />
+    <Compile Include="Html\JavaScriptHelper.cs" />
+    <Compile Include="Mail\MailHelper.cs" />
+    <Compile Include="Page\BindDataControl.cs" />
+    <Compile Include="Media\MediaHelper.cs" />
+    <Compile Include="Net\IpHelper.cs" />
+    <Compile Include="Page\PageHelper.cs" />
+    <Compile Include="Image\ImageHelper.cs" />
+    <Compile Include="Image\ImageDown.cs" />
+    <Compile Include="Image\ImageUpload.cs" />
+    <Compile Include="Net\NetHelper.cs" />
+    <Compile Include="NPOI\NPOIHelper.cs" />
     <Compile Include="Excel\DataToExcel.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
     <Compile Include="Excel\ExportExcel.cs" />
     <Compile Include="Excel\GridViewExport.cs" />
     <Compile Include="FTP\FTPClient.cs" />
     <Compile Include="FTP\FTPHelper.cs" />
-    <Compile Include="HTMLHelper.cs" />
-    <Compile Include="HttpProc.cs" />
-    <Compile Include="INIFile.cs" />
+    <Compile Include="Html\HtmlHelper.cs" />
+    <Compile Include="Html\WebClientHelper.cs" />
+    <Compile Include="File\INIFileHelper.cs" />
     <Compile Include="Json\JsonHelper.cs" />
-    <Compile Include="JS\JsHelper.cs" />
-    <Compile Include="MailSender.cs" />
+    <Compile Include="Mail\MailSmtpHelper.cs" />
     <Compile Include="Message\MessageHelper.cs" />
-    <Compile Include="PageBase.cs">
+    <Compile Include="Page\PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PageValidate.cs" />
+    <Compile Include="Page\PageValidate.cs" />
+    <Compile Include="Path\WebSitePathHelper.cs" />
     <Compile Include="PDF\PDFOperation.cs" />
     <Compile Include="PinYin\PinYinHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterHelper.cs" />
-    <Compile Include="RMBHelper.cs" />
+    <Compile Include="Random\RandomHelper.cs" />
+    <Compile Include="Regex\RegexHelper.cs" />
+    <Compile Include="Register\RegisterHelper.cs" />
+    <Compile Include="RMB\RMBHelper.cs" />
+    <Compile Include="Serialize\SerializeHelper.cs" />
     <Compile Include="Session\SessionHelper.cs" />
-    <Compile Include="SQLHelper.cs" />
-    <Compile Include="StringPlus.cs" />
-    <Compile Include="SysHelper.cs" />
-    <Compile Include="TimeParser.cs" />
-    <Compile Include="UpLoad\FileUp.cs" />
-    <Compile Include="UpLoad\UpLoadHelper.cs">
+    <Compile Include="String\StringHelper.cs" />
+    <Compile Include="System\SysHelper.cs" />
+    <Compile Include="File\FileUpHelper.cs" />
+    <Compile Include="Url\UrlHelper.cs" />
+    <Compile Include="Validator\ValidatorHelper.cs" />
+    <Compile Include="VerifyCode\VerifyCodeHelper.cs" />
+    <Compile Include="VerifyCode\VerifyCodeRand.cs" />
+    <Compile Include="Video\VideoHelper.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UrlOper.cs" />
-    <Compile Include="Validator.cs" />
     <Compile Include="XML\XmlHelper.cs" />
     <Compile Include="XML\XMLProcess.cs" />
+    <Compile Include="Zip\ZipHelper.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
