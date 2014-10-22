@@ -5,9 +5,8 @@ namespace HD.Common
 {
 	/// <summary>
 	/// web.config操作类
-    /// Copyright (C) Maticsoft
 	/// </summary>
-	public sealed class ConfigHelper
+	public sealed class WebConfigHelper
 	{
 		/// <summary>
 		/// 得到AppSettings中的配置字符串信息
@@ -56,6 +55,7 @@ namespace HD.Common
 			}
 			return result;
 		}
+
 		/// <summary>
 		/// 得到AppSettings中的配置Decimal信息
 		/// </summary>
@@ -79,6 +79,7 @@ namespace HD.Common
 
 			return result;
 		}
+
 		/// <summary>
 		/// 得到AppSettings中的配置int信息
 		/// </summary>

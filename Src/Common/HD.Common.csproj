@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\HD.Common.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -80,7 +81,7 @@
   <ItemGroup>
     <Compile Include="BarCode\BarCodeHelper.cs" />
     <Compile Include="Cache\CacheHelper.cs" />
-    <Compile Include="Calendar\CNDate.cs" />
+    <Compile Include="Date\ChineseCalHelper.cs" />
     <Compile Include="Config\ConfigHelper.cs" />
     <Compile Include="Page\ValidateImgPage.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -90,13 +91,13 @@
     <Compile Include="Cookie\CookieHelper.cs" />
     <Compile Include="CSV\CsvHelper.cs" />
     <Compile Include="Date\TimeHelper.cs" />
-    <Compile Include="DEncrypt\Base64_DEncrypt.cs" />
-    <Compile Include="DEncrypt\Triple_DESDEncrypt.cs" />
-    <Compile Include="DEncrypt\DES_DEncrypt.cs" />
-    <Compile Include="DEncrypt\File_DEncrypt.cs" />
-    <Compile Include="DEncrypt\Hash_DEncrypt.cs" />
-    <Compile Include="DEncrypt\MD5_Encrypt.cs" />
-    <Compile Include="DEncrypt\RSA_DEncrypt.cs" />
+    <Compile Include="DEncrypt\Base64DEncrypt.cs" />
+    <Compile Include="DEncrypt\TripleDESDEncrypt.cs" />
+    <Compile Include="DEncrypt\DESDEncrypt.cs" />
+    <Compile Include="DEncrypt\FileDEncrypt.cs" />
+    <Compile Include="DEncrypt\HashDEncrypt.cs" />
+    <Compile Include="DEncrypt\MD5Encrypt.cs" />
+    <Compile Include="DEncrypt\RSADEncrypt.cs" />
     <Compile Include="File\DirectoryHelper.cs" />
     <Compile Include="File\FileDownHelper.cs" />
     <Compile Include="File\FileHelper.cs" />

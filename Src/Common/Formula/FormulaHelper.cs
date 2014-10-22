@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotNet.Utilities
+namespace HD.Common
 {
     /// <summary>
     /// EnumFormula
@@ -23,9 +23,9 @@ namespace DotNet.Utilities
     /// <summary>
     /// FormulaDeal
     /// </summary>
-    public class FormulaDeal
+    public class FormulaHelper
     {
-        static FormulaDeal()
+        static FormulaHelper()
         {
 
         }

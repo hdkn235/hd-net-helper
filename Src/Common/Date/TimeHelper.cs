@@ -3,8 +3,7 @@
 namespace HD.Common
 {
     /// <summary>
-    /// 时间类
-    /// 1、SecondToMinute(int Second) 把秒转换成分钟
+    /// 时间帮助类
     /// </summary>
     public class TimeHelper
     {

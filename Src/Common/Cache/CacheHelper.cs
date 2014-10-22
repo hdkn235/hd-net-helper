@@ -4,6 +4,9 @@ using System.Collections;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 缓存帮助类
+    /// </summary>
     public class CacheHelper
     {
         /// <summary>

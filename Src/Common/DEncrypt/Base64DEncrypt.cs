@@ -5,9 +5,12 @@ using System.Text;
 using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace HD.Common.DEncrypt
+namespace HD.Common
 {
-    public class Base64_DEncrypt
+    /// <summary>
+    /// Base64加解密帮助类
+    /// </summary>
+    public class Base64DEncrypt
     {
         #region Base64加密
         /// <summary>

@@ -5,18 +5,28 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 
-namespace HD.Common.DEncrypt
+namespace HD.Common
 {
-    public class File_DEncrypt
+    /// <summary>
+    /// 文件加解密帮助类
+    /// </summary>
+    public class FileDEncrypt
     {
+        #region 私有变量
         private const string key = "0123456789"; //默认密钥
         private byte[] sKey;
-        private byte[] sIV;
+        private byte[] sIV; 
+        #endregion
 
-        public File_DEncrypt()
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        public FileDEncrypt()
         {
 
-        }
+        } 
+        #endregion
 
         #region 加密文件
         /// <summary>

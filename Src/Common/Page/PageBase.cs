@@ -20,7 +20,7 @@ namespace HD.Common
     public class PageBase : System.Web.UI.Page
     {
         public int PermissionID = -1;//默认-1为无限制，可以在不同页面继承里来控制不同页面的权限
-        private string virtualPath = HD.Common.ConfigHelper.GetConfigString("VirtualPath");
+        private string virtualPath = HD.Common.WebConfigHelper.GetConfigString("VirtualPath");
 
         /// <summary>
         /// 构造函数

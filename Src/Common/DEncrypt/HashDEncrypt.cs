@@ -2,14 +2,17 @@
 using System.Text;
 using System.Security.Cryptography;
 
-namespace HD.Common.DEncrypt
+namespace HD.Common
 {
 	/// <summary>
 	/// 得到随机安全码（哈希加密）。
 	/// </summary>
-	public class Hash_DEncrypt
+	public class HashDEncrypt
 	{
-		public Hash_DEncrypt()
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+		public HashDEncrypt()
 		{
 			//
 			// TODO: 在此处添加构造函数逻辑

@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace DotNet.Utilities
+namespace HD.Common
 {
+    /// <summary>
+    /// 条形码帮助类
+    /// </summary>
     public class BarCodeHelper
     {
+        #region 获取12位39码的Html字符串
         /// <summary>
-        /// 获取12位39码Html字符串
+        /// 获取12位39码的Html字符串
         /// </summary>
-        /// <param name="s"></param>
-        /// <param name="width"></param>
-        /// <param name="height"></param>
-        /// <returns></returns>
+        /// <param name="s">转换的字符串</param>
+        /// <param name="width">条码的宽度</param>
+        /// <param name="height">条码的高度</param>
+        /// <returns>html</returns>
         public static string Get39Html(string s, int width, int height)
         {
             Hashtable ht = new Hashtable();
@@ -141,14 +145,16 @@ namespace DotNet.Utilities
             result_html += "<div style=\"clear:both\"></div>";
 
             return "<div style=\"background:#FFFFFF;padding:5px;font-size:" + (width * 10) + "px;font-family:'楷体';\">" + result_html + "</div>";
-        }
+        } 
+        #endregion
 
+        #region 获取EAN13码Html字符串
         /// <summary>
         /// 获取EAN13码Html字符串
         /// </summary>
-        /// <param name="s"></param>
-        /// <param name="width"></param>
-        /// <param name="height"></param>
+        /// <param name="s">转换的字符串</param>
+        /// <param name="width">条码的宽度</param>
+        /// <param name="height">条码的高度</param>
         /// <returns></returns>
         public static string GetEAN13Html(string s, int width, int height)
         {
@@ -319,6 +325,7 @@ namespace DotNet.Utilities
                 case '9': return "ABBABA";
                 default: return "Error!";
             }
-        }
+        } 
+        #endregion
     }
 }

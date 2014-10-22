@@ -2,23 +2,29 @@
 using System.Security.Cryptography;  
 using System.Text;
 
-namespace HD.Common.DEncrypt
+namespace HD.Common
 {
 	/// <summary>
-	/// Encrypt 的摘要说明。
-    /// Copyright (C) Maticsoft
+    /// TripleDES加解密帮助类
 	/// </summary>
-	public class Triple_DESDEncrypt
+	public class TripleDESDEncrypt
 	{
-        private const string defaultKey = "hd";
+        #region 常量
+        /// <summary>
+        /// 默认密钥
+        /// </summary>
+        private const string defaultKey = "hd"; 
+        #endregion
 
-		/// <summary>
-		/// 构造方法
-		/// </summary>
-        public Triple_DESDEncrypt()  
-		{  
+        #region 构造方法
+        /// <summary>
+        /// 构造方法
+        /// </summary>
+        public TripleDESDEncrypt()
+        {
 
-		} 
+        }  
+        #endregion
 
 		#region 使用 缺省密钥字符串 加密/解密string
 
@@ -155,9 +161,6 @@ namespace HD.Common.DEncrypt
 		}  
   
 		#endregion
-
-		
-
 		
 	}
 }

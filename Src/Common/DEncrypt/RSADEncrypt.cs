@@ -1,16 +1,22 @@
 ﻿using System; 
 using System.Text; 
 using System.Security.Cryptography;
-namespace HD.Common.DEncrypt
+
+namespace HD.Common
 { 
 	/// <summary> 
 	/// RSA加密解密及RSA签名和验证
 	/// </summary> 
-	public class RSA_DEncrypt 
-	{ 		
-		public RSA_DEncrypt() 
-		{ 			
-		} 
+	public class RSADEncrypt 
+	{
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        public RSADEncrypt()
+        {
+        } 
+        #endregion 
 		
 		#region RSA 加密解密 
 

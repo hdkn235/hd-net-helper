@@ -8,3 +8,4 @@ E:\Projects\Helper\Src\DBHelper\bin\Debug\MySql.Data.dll
 E:\Projects\Helper\Src\DBHelper\bin\Debug\System.Data.SQLite.DLL
 E:\Projects\Helper\Src\DBHelper\obj\Debug\HD.DBHelper.dll
 E:\Projects\Helper\Src\DBHelper\obj\Debug\HD.DBHelper.pdb
+E:\Projects\Helper\Src\DBHelper\obj\Debug\HD.DBHelper.csprojResolveAssemblyReference.cache

@@ -5,9 +5,12 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 
-namespace HD.Common.DEncrypt
+namespace HD.Common
 {
-    public class MD5_Encrypt
+    /// <summary>
+    /// 获取MD5值帮助类
+    /// </summary>
+    public class MD5Encrypt
     {
         /// <summary>
         /// 得到字符串的md5值
