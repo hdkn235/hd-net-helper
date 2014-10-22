@@ -8,6 +8,9 @@ using System.Reflection;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// GridView操作相关类
+    /// </summary>
     public class GridViewHelper
     {
         #region 私有方法

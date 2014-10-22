@@ -5,7 +5,10 @@ using System.IO;
 
 namespace HD.Common
 {
-    public class FileOperate
+    /// <summary>
+    /// 文件操作帮助类
+    /// </summary>
+    public class FileHelper
     {
         #region 写文件
         protected void Write_Txt(string FileName, string Content)

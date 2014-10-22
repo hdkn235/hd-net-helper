@@ -34,6 +34,11 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="T:HD.Common.HtmlHelper">
+            <summary>
+            Html操作相关类
+            </summary>
+        </member>
         <member name="M:HD.Common.HtmlHelper.GetHtml(System.String,System.String,System.Boolean,System.Net.CookieContainer)">
             <summary>
             获取HTML
@@ -454,6 +459,11 @@
             </summary>
             <param name="directoryPath">指定目录的绝对路径</param>
         </member>
+        <member name="T:HD.Common.FTPHelper">
+            <summary>
+            Ftp帮助类
+            </summary>
+        </member>
         <member name="M:HD.Common.FTPHelper.GetList(System.String)">
             <summary>
             得到文件列表
@@ -744,6 +754,11 @@
             获取本机在Internet网络的广域网IP
             </summary>        
         </member>
+        <member name="T:HD.Common.PageHelper">
+            <summary>
+            网页帮助类
+            </summary>
+        </member>
         <member name="M:HD.Common.PageHelper.LockPage(System.Web.UI.Page,System.Object[])">
             <summary>
             锁定页面上的一些组件
@@ -819,88 +834,93 @@
             </summary>
             <returns>页面名称</returns>
         </member>
-        <member name="M:HD.Common.FileOperate.GetPostfixStr(System.String)">
+        <member name="T:HD.Common.FileHelper">
+            <summary>
+            文件操作帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.FileHelper.GetPostfixStr(System.String)">
             <summary>
             取后缀名
             </summary>
             <param name="filename">文件名</param>
             <returns>.gif|.html格式</returns>
         </member>
-        <member name="M:HD.Common.FileOperate.WriteFile(System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.WriteFile(System.String,System.String)">
             <summary>
             写文件
             </summary>
             <param name="Path">文件路径</param>
             <param name="Strings">文件内容</param>
         </member>
-        <member name="M:HD.Common.FileOperate.ReadFile(System.String)">
+        <member name="M:HD.Common.FileHelper.ReadFile(System.String)">
             <summary>
             读文件
             </summary>
             <param name="Path">文件路径</param>
             <returns></returns>
         </member>
-        <member name="M:HD.Common.FileOperate.FileAdd(System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.FileAdd(System.String,System.String)">
             <summary>
             追加文件
             </summary>
             <param name="Path">文件路径</param>
             <param name="strings">内容</param>
         </member>
-        <member name="M:HD.Common.FileOperate.FileCoppy(System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.FileCoppy(System.String,System.String)">
             <summary>
             拷贝文件
             </summary>
             <param name="OrignFile">原始文件</param>
             <param name="NewFile">新文件路径</param>
         </member>
-        <member name="M:HD.Common.FileOperate.FileDel(System.String)">
+        <member name="M:HD.Common.FileHelper.FileDel(System.String)">
             <summary>
             删除文件
             </summary>
             <param name="Path">路径</param>
         </member>
-        <member name="M:HD.Common.FileOperate.FileMove(System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.FileMove(System.String,System.String)">
             <summary>
             移动文件
             </summary>
             <param name="OrignFile">原始路径</param>
             <param name="NewFile">新路径</param>
         </member>
-        <member name="M:HD.Common.FileOperate.FolderCreate(System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.FolderCreate(System.String,System.String)">
             <summary>
             在当前目录下创建目录
             </summary>
             <param name="OrignFolder">当前目录</param>
             <param name="NewFloder">新目录</param>
         </member>
-        <member name="M:HD.Common.FileOperate.FolderCreate(System.String)">
+        <member name="M:HD.Common.FileHelper.FolderCreate(System.String)">
             <summary>
             创建文件夹
             </summary>
             <param name="Path"></param>
         </member>
-        <member name="M:HD.Common.FileOperate.DeleteFolder(System.String)">
+        <member name="M:HD.Common.FileHelper.DeleteFolder(System.String)">
             <summary>
             递归删除文件夹目录及文件
             </summary>
             <param name="dir"></param>  
             <returns></returns>
         </member>
-        <member name="M:HD.Common.FileOperate.CopyDir(System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.CopyDir(System.String,System.String)">
             <summary>
             指定文件夹下面的所有内容copy到目标文件夹下面
             </summary>
             <param name="srcPath">原始路径</param>
             <param name="aimPath">目标文件夹</param>
         </member>
-        <member name="M:HD.Common.FileOperate.GetFoldAll(System.String)">
+        <member name="M:HD.Common.FileHelper.GetFoldAll(System.String)">
             <summary>
             获取指定文件夹下所有子目录及文件
             </summary>
             <param name="Path">详细路径</param>
         </member>
-        <member name="M:HD.Common.FileOperate.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String)">
+        <member name="M:HD.Common.FileHelper.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String)">
             <summary>
             获取指定文件夹下所有子目录及文件函数
             </summary>
@@ -909,7 +929,7 @@
             <param name="Rn">用于迭加的传入值,一般为空</param>
             <returns></returns>
         </member>
-        <member name="M:HD.Common.FileOperate.GetFoldAll(System.String,System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.GetFoldAll(System.String,System.String,System.String)">
              <summary>
              获取指定文件夹下所有子目录及文件(下拉框形)
              </summary>
@@ -917,7 +937,7 @@
             <param name="DropName">下拉列表名称</param>
             <param name="tplPath">默认选择模板名称</param>
         </member>
-        <member name="M:HD.Common.FileOperate.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String,System.String)">
+        <member name="M:HD.Common.FileHelper.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String,System.String)">
             <summary>
             获取指定文件夹下所有子目录及文件函数
             </summary>
@@ -927,19 +947,37 @@
             <param name="tplPath">默认选择模板名称</param>
             <returns></returns>
         </member>
-        <member name="M:HD.Common.FileOperate.GetDirectoryLength(System.String)">
+        <member name="M:HD.Common.FileHelper.GetDirectoryLength(System.String)">
             <summary>
             获取文件夹大小
             </summary>
             <param name="dirPath">文件夹路径</param>
             <returns></returns>
         </member>
-        <member name="M:HD.Common.FileOperate.GetFileAttibe(System.String)">
+        <member name="M:HD.Common.FileHelper.GetFileAttibe(System.String)">
             <summary>
             获取指定文件详细属性
             </summary>
             <param name="filePath">文件详细路径</param>
             <returns></returns>
+        </member>
+        <member name="T:HD.Common.Base64DEncrypt">
+            <summary>
+            Base64加解密帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.Base64DEncrypt.EncodeBase64(System.String)">
+            <summary>
+            Base64加密
+            </summary>
+            <param name="text">要加密的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.Base64DEncrypt.DecodeBase64(System.String)">
+            <summary>
+            Base64解密
+            </summary>
+            <param name="text">要解密的字符串</param>
         </member>
         <member name="T:HD.Common.WebConfigHelper">
             <summary>
@@ -1100,6 +1138,11 @@
             </summary>
             <returns>字符串</returns>
         </member>
+        <member name="T:HD.Common.PinYinHelper">
+            <summary>
+            中文转换拼音帮助类
+            </summary>
+        </member>
         <member name="M:HD.Common.PinYinHelper.GetPinYinChar(System.Char)">
             <summary>
             获取字符的拼音，没有音标
@@ -1150,11 +1193,248 @@
             移除全部缓存
             </summary>
         </member>
+        <member name="T:HD.Common.ChineseCalHelper">
+            <summary>
+            中国日历
+            </summary>
+        </member>
+        <member name="F:HD.Common.ChineseCalHelper.LunarDateArray">
+             <summary>
+             来源于网上的农历数据
+             </summary>
+             <remarks>
+             数据结构如下，共使用17位数据
+             第17位：表示闰月天数，0表示29天   1表示30天
+             第16位-第5位（共12位）表示12个月，其中第16位表示第一月，如果该月为30天则为1，29天为0
+             第4位-第1位（共4位）表示闰月是哪个月，如果当年没有闰月，则置0
+            </remarks>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.#ctor(System.DateTime)">
+            <summary>
+            用一个标准的公历日期来初使化
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            用农历的日期来初使化
+            </summary>
+            <param name="cy">农历年</param>
+            <param name="cm">农历月</param>
+            <param name="cd">农历日</param>
+            <param name="LeapFlag">闰月标志</param>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.GetChineseMonthDays(System.Int32,System.Int32)">
+            <summary>
+            //传回农历y年m月的总天数
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.GetChineseLeapMonth(System.Int32)">
+            <summary>
+            传回农历 y年闰哪个月 1-12 , 没闰传回 0
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.GetChineseLeapMonthDays(System.Int32)">
+            <summary>
+            传回农历y年闰月的天数
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.GetChineseYearDays(System.Int32)">
+            <summary>
+            取农历年一年的天数
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.GetChineseHour(System.DateTime)">
+            <summary>
+            获得当前时间的时辰
+            </summary> 
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.CheckDateLimit(System.DateTime)">
+            <summary>
+            检查公历日期是否符合要求
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.CheckChineseDateLimit(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            检查农历日期是否合理
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.ConvertNumToChineseNum(System.Char)">
+            <summary>
+            将0-9转成汉字形式
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.BitTest32(System.Int32,System.Int32)">
+            <summary>
+            测试某位是否为真
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.ConvertDayOfWeek(System.DayOfWeek)">
+            <summary>
+            将星期几转成数字表示
+            </summary>
+        </member>
+        <member name="M:HD.Common.ChineseCalHelper.CompareWeekDayHoliday(System.DateTime,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            比较当天是不是指定的第周几
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.newCalendarHoliday">
+            <summary>
+            计算中国农历节日
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.WeekDayHoliday">
+            <summary>
+            按某月第几周第几日计算的节日
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.DateHoliday">
+            <summary>
+            按公历日计算的节日
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.Date">
+            <summary>
+            取对应的公历日期
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.WeekDay">
+            <summary>
+            取星期几
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.WeekDayStr">
+            <summary>
+            周几的字符
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.DateString">
+            <summary>
+            公历日期中文表示法 如一九九七年七月一日
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.IsLeapYear">
+            <summary>
+            当前是否公历闰年
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseConstellation">
+            <summary>
+            28星宿计算
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseHour">
+            <summary>
+            时辰
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.IsChineseLeapMonth">
+            <summary>
+            是否闰月
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.IsChineseLeapYear">
+            <summary>
+            当年是否有闰月
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseDay">
+            <summary>
+            农历日
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseDayString">
+            <summary>
+            农历日中文表示
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseMonth">
+            <summary>
+            农历的月份
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseMonthString">
+            <summary>
+            农历月份字符串
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseYear">
+            <summary>
+            取农历年份
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseYearString">
+            <summary>
+            取农历年字符串如，一九九七年
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseDateString">
+            <summary>
+            取农历日期表示法：农历一九九七年正月初五
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.ChineseTwentyFourDay">
+            <summary>
+            定气法计算二十四节气,二十四节气是按地球公转来计算的，并非是阴历计算的
+            </summary>
+            <remarks>
+            节气的定法有两种。古代历法采用的称为"恒气"，即按时间把一年等分为24份，
+            每一节气平均得15天有余，所以又称"平气"。现代农历采用的称为"定气"，即
+            按地球在轨道上的位置为标准，一周360°，两节气之间相隔15°。由于冬至时地
+            球位于近日点附近，运动速度较快，因而太阳在黄道上移动15°的时间不到15天。
+            夏至前后的情况正好相反，太阳在黄道上移动较慢，一个节气达16天之多。采用
+            定气时可以保证春、秋两分必然在昼夜平分的那两天。
+            </remarks>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.Constellation">
+            <summary>
+            计算指定日期的星座序号 
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.Animal">
+            <summary>
+            计算属相的索引，注意虽然属相是以农历年来区别的，但是目前在实际使用中是按公历来计算的
+            鼠年为1,其它类推
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.AnimalString">
+            <summary>
+            取属相字符串
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.GanZhiYearString">
+            <summary>
+            取农历年的干支表示法如 乙丑年
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.GanZhiMonthString">
+            <summary>
+            取干支的月表示字符串，注意农历的闰月不记干支
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.GanZhiDayString">
+            <summary>
+            取干支日表示法
+            </summary>
+        </member>
+        <member name="P:HD.Common.ChineseCalHelper.GanZhiDateString">
+            <summary>
+            取当前日期的干支表示法如 甲子年乙丑月丙庚日
+            </summary>
+        </member>
+        <member name="T:HD.Common.ChineseCalHelper.SolarHolidayStruct">
+            <summary>
+            阳历
+            </summary>
+        </member>
+        <member name="T:HD.Common.ChineseCalHelper.LunarHolidayStruct">
+            <summary>
+            农历
+            </summary>
+        </member>
         <member name="T:HD.Common.SessionHelper">
             <summary>
-            Session 操作类
-            1、GetSession(string name)根据session名获取session对象
-            2、SetSession(string name, object val)设置session
+            Session操作类
             </summary>
         </member>
         <member name="M:HD.Common.SessionHelper.Set(System.String,System.Object)">
@@ -1221,44 +1501,38 @@
             </summary>
             <param name="strSessionName">Session对象名称</param>
         </member>
-        <member name="M:HD.Common.MessageBox.Show(System.Web.UI.Page,System.String)">
+        <member name="T:HD.Common.HashDEncrypt">
             <summary>
-            显示消息提示对话框
+            得到随机安全码（哈希加密）。
             </summary>
-            <param name="page">当前页面指针，一般为this</param>
-            <param name="msg">提示信息</param>
         </member>
-        <member name="M:HD.Common.MessageBox.ShowConfirm(System.Web.UI.WebControls.WebControl,System.String)">
+        <member name="M:HD.Common.HashDEncrypt.#ctor">
             <summary>
-            控件点击 消息确认提示框
+            构造函数
             </summary>
-            <param name="page">当前页面指针，一般为this</param>
-            <param name="msg">提示信息</param>
         </member>
-        <member name="M:HD.Common.MessageBox.ShowAndRedirect(System.Web.UI.Page,System.String,System.String)">
+        <member name="M:HD.Common.HashDEncrypt.GetSecurity">
             <summary>
-            显示消息提示对话框，并进行页面跳转
+            得到随机哈希加密字符串
             </summary>
-            <param name="page">当前页面指针，一般为this</param>
-            <param name="msg">提示信息</param>
-            <param name="url">跳转的目标URL</param>
+            <returns></returns>
         </member>
-        <member name="M:HD.Common.MessageBox.ResponseScript(System.Web.UI.Page,System.String)">
+        <member name="M:HD.Common.HashDEncrypt.GetRandomValue">
             <summary>
-            输出自定义脚本信息
+            得到一个随机数值
             </summary>
-            <param name="page">当前页面指针，一般为this</param>
-            <param name="script">输出脚本</param>
+            <returns></returns>
         </member>
-        <member name="M:HD.Common.ExportExcel.ExportData(System.Web.UI.WebControls.GridView)">
+        <member name="M:HD.Common.HashDEncrypt.HashEncoding(System.String)">
             <summary>
-            导出Excel
+            哈希加密一个字符串
             </summary>
-            <param name="obj"></param>
+            <param name="Security"></param>
+            <returns></returns>
         </member>
         <member name="T:HD.Common.RMBHelper">
             <summary> 
-            RMBHelper 的摘要说明。 
+            人民币帮助类 
             </summary> 
         </member>
         <member name="M:HD.Common.RMBHelper.CmycurD(System.Decimal)">
@@ -1275,6 +1549,100 @@
             </summary> 
             <param name="num">用户输入的金额，字符串形式未转成decimal</param> 
             <returns></returns> 
+        </member>
+        <member name="T:HD.Common.TripleDESDEncrypt">
+            <summary>
+            TripleDES加解密帮助类
+            </summary>
+        </member>
+        <member name="F:HD.Common.TripleDESDEncrypt.defaultKey">
+            <summary>
+            默认密钥
+            </summary>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.String)">
+            <summary>
+            使用缺省密钥字符串加密string
+            </summary>
+            <param name="original">明文</param>
+            <returns>密文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.String)">
+            <summary>
+            使用缺省密钥字符串解密string
+            </summary>
+            <param name="original">密文</param>
+            <returns>明文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.String,System.String)">
+            <summary>
+            使用给定密钥字符串加密string
+            </summary>
+            <param name="original">原始文字</param>
+            <param name="key">密钥</param>
+            <param name="encoding">字符编码方案</param>
+            <returns>密文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.String,System.String)">
+            <summary>
+            使用给定密钥字符串解密string
+            </summary>
+            <param name="original">密文</param>
+            <param name="key">密钥</param>
+            <returns>明文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            使用给定密钥字符串解密string,返回指定编码方式明文
+            </summary>
+            <param name="encrypted">密文</param>
+            <param name="key">密钥</param>
+            <param name="encoding">字符编码方案</param>
+            <returns>明文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.Byte[])">
+            <summary>
+            使用缺省密钥字符串解密byte[]
+            </summary>
+            <param name="encrypted">密文</param>
+            <param name="key">密钥</param>
+            <returns>明文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.Byte[])">
+            <summary>
+            使用缺省密钥字符串加密
+            </summary>
+            <param name="original">原始数据</param>
+            <param name="key">密钥</param>
+            <returns>密文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.MakeMD5(System.Byte[])">
+            <summary>
+            生成MD5摘要
+            </summary>
+            <param name="original">数据源</param>
+            <returns>摘要</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.Byte[],System.Byte[])">
+            <summary>
+            使用给定密钥加密
+            </summary>
+            <param name="original">明文</param>
+            <param name="key">密钥</param>
+            <returns>密文</returns>
+        </member>
+        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.Byte[],System.Byte[])">
+            <summary>
+            使用给定密钥解密数据
+            </summary>
+            <param name="encrypted">密文</param>
+            <param name="key">密钥</param>
+            <returns>明文</returns>
         </member>
         <member name="T:HD.Common.CsvHelper">
             <summary>
@@ -1296,6 +1664,11 @@
             </summary>
             <param name="filePath">csv文件路径</param>
             <param name="n">表示第n行是字段title,第n+1行是记录开始</param>
+        </member>
+        <member name="T:HD.Common.CookieHelper">
+            <summary>
+            Cookie帮助相关类
+            </summary>
         </member>
         <member name="M:HD.Common.CookieHelper.ClearCookie(System.String)">
             <summary>
@@ -1324,6 +1697,44 @@
             <param name="cookiename">cookie名</param>
             <param name="cookievalue">cookie值</param>
             <param name="expires">过期时间 DateTime</param>
+        </member>
+        <member name="T:HD.Common.FileDEncrypt">
+            <summary>
+            文件加解密帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.FileDEncrypt.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HD.Common.FileDEncrypt.EncryptFile(System.String,System.String,System.String)">
+            <summary>
+            加密文件
+            </summary>
+            <param name="filePath">输入文件路径</param>
+            <param name="savePath">加密后输出文件路径</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns></returns>  
+        </member>
+        <member name="M:HD.Common.FileDEncrypt.DecryptFile(System.String,System.String,System.String)">
+            <summary>
+            解密文件
+            </summary>
+            <param name="filePath">输入文件路径</param>
+            <param name="savePath">解密后输出文件路径</param>
+            <param name="keyStr">密码，可以为“”</param>
+            <returns></returns>    
+        </member>
+        <member name="T:HD.Common.SerializeHelper">
+            <summary>
+            序列化帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.SerializeHelper.#ctor">
+            <summary>
+            构造函数
+            </summary>
         </member>
         <member name="M:HD.Common.SerializeHelper.Save(System.Object,System.String)">
             <summary>
@@ -1374,6 +1785,11 @@
             BinaryFormatter反序列化
             </summary>
             <param name="str">字符串序列</param>
+        </member>
+        <member name="T:HD.Common.JsonHelper">
+            <summary>
+            JSON转换帮助类
+            </summary>
         </member>
         <member name="M:HD.Common.JsonHelper.String2Json(System.String)">
             <summary>
@@ -1477,7 +1893,7 @@
         </member>
         <member name="T:HD.Common.ZipHelper">
             <summary>
-            压缩、解压缩类
+            Zip压缩、解压缩类
             </summary>
         </member>
         <member name="M:HD.Common.ZipHelper.EnZip(System.String,System.String)">
@@ -1520,6 +1936,16 @@
             </summary>
             <param name="FileToZip">要进行压缩的文件名</param>
             <param name="ZipedFile">压缩后生成的压缩文件名</param>
+        </member>
+        <member name="T:HD.Common.VideoHelper">
+            <summary>
+            视频帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.VideoHelper.#ctor">
+            <summary>
+            构造函数
+            </summary>
         </member>
         <member name="M:HD.Common.VideoHelper.GetFileName(System.String)">
             <summary>
@@ -1570,6 +1996,11 @@
         <member name="M:HD.Common.VideoHelper.MChangeFilePhy(System.String,System.String,System.String)">
             <summary>
             运行mencoder的视频解码器转换
+            </summary>
+        </member>
+        <member name="T:HD.Common.FTPClient">
+            <summary>
+            Ftp客户端相关类
             </summary>
         </member>
         <member name="M:HD.Common.FTPClient.#ctor">
@@ -1996,9 +2427,121 @@
             <param name="strHTML">HTML</param>
             <param name="path">路径</param>
         </member>
+        <member name="T:HD.Common.DESDEncrypt">
+            <summary>
+            DES加密/解密帮助类。
+            </summary>
+        </member>
+        <member name="F:HD.Common.DESDEncrypt.defaultKey">
+            <summary>
+            默认密钥
+            </summary>
+        </member>
+        <member name="M:HD.Common.DESDEncrypt.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:HD.Common.DESDEncrypt.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.DESDEncrypt.Encrypt(System.String,System.String)">
+            <summary> 
+            加密数据 
+            </summary> 
+            <param name="Text"></param> 
+            <param name="sKey"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:HD.Common.DESDEncrypt.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.DESDEncrypt.Decrypt(System.String,System.String)">
+            <summary> 
+            解密数据 
+            </summary> 
+            <param name="Text"></param> 
+            <param name="sKey"></param> 
+            <returns></returns> 
+        </member>
+        <member name="T:HD.Common.TimeHelper">
+            <summary>
+            时间帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.TimeHelper.SecondToMinute(System.Int32)">
+            <summary>
+            把秒转换成分钟
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.DateDiff2(System.DateTime,System.DateTime)">
+            <summary>
+            获得两个日期的间隔
+            </summary>
+            <param name="DateTime1">日期一。</param>
+            <param name="DateTime2">日期二。</param>
+            <returns>日期间隔TimeSpan。</returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.FormatDate(System.DateTime,System.String)">
+            <summary>
+            格式化日期时间
+            </summary>
+            <param name="dateTime1">日期时间</param>
+            <param name="dateMode">显示模式</param>
+            <returns>0-9种模式的日期</returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.GetFormatDate(System.DateTime,System.Char)">
+            <summary>
+            将时间格式化成 年月日 的形式,如果时间为null，返回当前系统时间
+            </summary>
+            <param name="dt">年月日分隔符</param>
+            <param name="Separator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.GetFormatTime(System.DateTime,System.Char)">
+            <summary>
+            将时间格式化成 时分秒 的形式,如果时间为null，返回当前系统时间
+            </summary>
+            <param name="dt"></param>
+            <param name="Separator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.GetRandomTime(System.DateTime,System.DateTime)">
+            <summary>
+            得到随机日期
+            </summary>
+            <param name="time1">起始日期</param>
+            <param name="time2">结束日期</param>
+            <returns>间隔日期之间的 随机日期</returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.GetMonthLastDate(System.Int32,System.Int32)">
+            <summary>
+            返回某年某月最后一天
+            </summary>
+            <param name="year">年份</param>
+            <param name="month">月份</param>
+            <returns>日</returns>
+        </member>
+        <member name="M:HD.Common.TimeHelper.ReturnDateFormat(System.Int32,System.String@,System.String@)">
+            <summary>
+            返回每月的第一天和最后一天
+            </summary>
+            <param name="month"></param>
+            <param name="firstDay"></param>
+            <param name="lastDay"></param>
+        </member>
         <member name="T:HD.Common.GridViewExport">
             <summary>
-            Summary description for GridViewExport
+            GridView导出Excel相关类
             </summary>
         </member>
         <member name="M:HD.Common.GridViewExport.PrepareControlForExport(System.Web.UI.Control)">
@@ -2016,6 +2559,16 @@
             <param name="grid">grid的ID</param>
             <param name="dt">数据源</param>
             <param name="excelFileName">要导出Excel的文件名</param>
+        </member>
+        <member name="T:HD.Common.ImageHelper">
+            <summary>
+            图片处理帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.ImageHelper.#ctor">
+            <summary>
+            构造函数
+            </summary>
         </member>
         <member name="M:HD.Common.ImageHelper.MakeThumbnail(System.String,System.String,System.Int32,System.Int32,System.String)">
             <summary>
@@ -2161,6 +2714,11 @@
             <param name="pattern">模式字符串</param>
             <param name="options">筛选条件</param>
         </member>
+        <member name="T:HD.Common.MailSmtpHelper">
+            <summary>
+            使用smtp发送邮件帮助类
+            </summary>
+        </member>
         <member name="M:HD.Common.MailSmtpHelper.SendByConfig(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Text.Encoding,System.Boolean,System.String[])">
             <summary>
             使用配置文件的配置信息发送邮件
@@ -2196,8 +2754,18 @@
         <member name="T:HD.Common.INIFileHelper">
             <summary>
             INI文件读写类。
-            Copyright (C) Maticsoft
             </summary>
+        </member>
+        <member name="F:HD.Common.INIFileHelper.path">
+            <summary>
+            Ini文件路径
+            </summary>
+        </member>
+        <member name="M:HD.Common.INIFileHelper.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="INIPath"></param>
         </member>
         <member name="M:HD.Common.INIFileHelper.IniWriteValue(System.String,System.String,System.String)">
             <summary>
@@ -2334,7 +2902,6 @@
         <member name="T:HD.Common.PageValidate">
             <summary>
             页面数据校验类
-            Copyright (C) Maticsoft 2004-2012
             </summary>
         </member>
         <member name="M:HD.Common.PageValidate.#ctor">
@@ -2429,198 +2996,30 @@
         </member>
         <member name="T:HD.Common.FormulaHelper">
             <summary>
-            FormulaDeal
+            数学函数帮助类
             </summary>
         </member>
-        <member name="M:HD.Common.XMLProcess.XMLLoad">
-            <summary>
-            导入XML文件
-            </summary>
-            <param name="XMLPath">XML文件路径</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.XMLLoad(System.String)">
-            <summary>
-            导入XML文件
-            </summary>
-            <param name="XMLPath">XML文件路径</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.GetXmlFullPath(System.String)">
-            <summary>
-            返回完整路径
-            </summary>
-            <param name="strPath">Xml的路径</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.Read(System.String)">
-            <summary>
-            读取指定节点的数据
-            </summary>
-            <param name="node">节点</param>
-            使用示列:
-            XMLProsess.Read("/Node", "")
-            XMLProsess.Read("/Node/Element[@Attribute='Name']")
-        </member>
-        <member name="M:HD.Common.XMLProcess.Read(System.String,System.String)">
-            <summary>
-            读取指定路径和节点的串联值
-            </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="attribute">属性名，非空时返回该属性值，否则返回串联值</param>
-            使用示列:
-            XMLProsess.Read(path, "/Node", "")
-            XMLProsess.Read(path, "/Node/Element[@Attribute='Name']")
-        </member>
-        <member name="M:HD.Common.XMLProcess.Read(System.String,System.String,System.String)">
-            <summary>
-            读取指定路径和节点的属性值
-            </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="attribute">属性名，非空时返回该属性值，否则返回串联值</param>
-            使用示列:
-            XMLProsess.Read(path, "/Node", "")
-            XMLProsess.Read(path, "/Node/Element[@Attribute='Name']", "Attribute")
-        </member>
-        <member name="M:HD.Common.XMLProcess.ReadAllChildallValue(System.String)">
-            <summary>
-            获取某一节点的所有孩子节点的值
-            </summary>
-            <param name="node">要查询的节点</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.ReadAllChild(System.String)">
-            <summary>
-            获取某一节点的所有孩子节点的值
-            </summary>
-            <param name="node">要查询的节点</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.GetDataViewByXml(System.String,System.String)">
+        <member name="T:HD.Common.RSADEncrypt">
             <summary> 
-            读取XML返回经排序或筛选后的DataView
-            </summary>
-            <param name="strWhere">筛选条件，如:"name='kgdiwss'"</param>
-            <param name="strSort"> 排序条件，如:"Id desc"</param>
+            RSA加密解密及RSA签名和验证
+            </summary> 
         </member>
-        <member name="M:HD.Common.XMLProcess.GetDataSetByXml(System.String)">
+        <member name="M:HD.Common.RSADEncrypt.#ctor">
             <summary>
-            读取XML返回DataSet
+            构造函数
             </summary>
-            <param name="strXmlPath">XML文件相对路径</param>
         </member>
-        <member name="M:HD.Common.XMLProcess.Insert(System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:HD.Common.RSADEncrypt.RSAKey(System.String@,System.String@)">
             <summary>
-            插入数据
+            RSA 的密钥产生 产生私钥 和公钥 
             </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="element">元素名，非空时插入新元素，否则在该元素中插入属性</param>
-            <param name="attribute">属性名，非空时插入该元素属性值，否则插入元素值</param>
-            <param name="value">值</param>
-            使用示列:
-            XMLProsess.Insert(path, "/Node", "Element", "", "Value")
-            XMLProsess.Insert(path, "/Node", "Element", "Attribute", "Value")
-            XMLProsess.Insert(path, "/Node", "", "Attribute", "Value")
+            <param name="xmlKeys"></param>
+            <param name="xmlPublicKey"></param>
         </member>
-        <member name="M:HD.Common.XMLProcess.Insert(System.String,System.String,System.String,System.String[][])">
+        <member name="T:HD.Common.NPOIHelper">
             <summary>
-            插入数据
+            NPOI操作帮助类
             </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="element">元素名，非空时插入新元素，否则在该元素中插入属性</param>
-            <param name="strList">由XML属性名和值组成的二维数组</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.WriteXmlByDataSet(System.String,System.String[],System.String[])">
-            <summary>
-            插入一行数据
-            </summary>
-            <param name="strXmlPath">XML文件相对路径</param>
-            <param name="Columns">要插入行的列名数组，如：string[] Columns = {"name","IsMarried"};</param>
-            <param name="ColumnValue">要插入行每列的值数组，如：string[] ColumnValue={"XML大全","false"};</param>
-            <returns>成功返回true,否则返回false</returns>
-        </member>
-        <member name="M:HD.Common.XMLProcess.Update(System.String,System.String)">
-            <summary>
-            修改指定节点的数据
-            </summary>
-            <param name="node">节点</param>
-            <param name="value">值</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.Update(System.String,System.String,System.String)">
-            <summary>
-            修改指定节点的数据
-            </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="value">值</param>
-            使用示列:
-            XMLProsess.Insert(path, "/Node","Value")
-            XMLProsess.Insert(path, "/Node","Value")
-        </member>
-        <member name="M:HD.Common.XMLProcess.Update(System.String,System.String,System.String,System.String)">
-            <summary>
-            修改指定节点的属性值(静态)
-            </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="attribute">属性名，非空时修改该节点属性值，否则修改节点值</param>
-            <param name="value">值</param>
-            使用示列:
-            XMLProsess.Insert(path, "/Node", "", "Value")
-            XMLProsess.Insert(path, "/Node", "Attribute", "Value")
-        </member>
-        <member name="M:HD.Common.XMLProcess.UpdateXmlRow(System.String,System.String[],System.String[],System.String,System.String)">
-            <summary>
-            更改符合条件的一条记录
-            </summary>
-            <param name="strXmlPath">XML文件路径</param>
-            <param name="Columns">列名数组</param>
-            <param name="ColumnValue">列值数组</param>
-            <param name="strWhereColumnName">条件列名</param>
-            <param name="strWhereColumnValue">条件列值</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.Delete(System.String,System.String)">
-            <summary>
-            删除节点值
-            </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="attribute">属性名，非空时删除该节点属性值，否则删除节点值</param>
-            <param name="value">值</param>
-            使用示列:
-            XMLProsess.Delete(path, "/Node", "")
-            XMLProsess.Delete(path, "/Node", "Attribute")
-        </member>
-        <member name="M:HD.Common.XMLProcess.Delete(System.String,System.String,System.String)">
-            <summary>
-            删除数据
-            </summary>
-            <param name="path">路径</param>
-            <param name="node">节点</param>
-            <param name="attribute">属性名，非空时删除该节点属性值，否则删除节点值</param>
-            <param name="value">值</param>
-            使用示列:
-            XMLProsess.Delete(path, "/Node", "")
-            XMLProsess.Delete(path, "/Node", "Attribute")
-        </member>
-        <member name="M:HD.Common.XMLProcess.DeleteXmlAllRows(System.String)">
-            <summary>
-            删除所有行
-            </summary>
-            <param name="strXmlPath">XML路径</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.DeleteXmlRowByIndex(System.String,System.Int32)">
-            <summary>
-            通过删除DataSet中指定索引行，重写XML以实现删除指定行
-            </summary>
-            <param name="iDeleteRow">要删除的行在DataSet中的Index值</param>
-        </member>
-        <member name="M:HD.Common.XMLProcess.DeleteXmlRows(System.String,System.String,System.String[])">
-            <summary>
-            删除指定列中指定值的行
-            </summary>
-            <param name="strXmlPath">XML相对路径</param>
-            <param name="strColumn">列名</param>
-            <param name="ColumnValue">指定值</param>
         </member>
         <member name="M:HD.Common.NPOIHelper.Export(System.Data.DataTable,System.String,System.String)">
             <summary>  
@@ -3357,6 +3756,11 @@
             </summary>
             <param name="FileName">文件虚拟路径</param>
         </member>
+        <member name="T:HD.Common.GridViewHelper">
+            <summary>
+            GridView操作相关类
+            </summary>
+        </member>
         <member name="M:HD.Common.GridViewHelper.GetStrPartly(System.String,System.Int32)">
             <summary>
             截取内容长度
@@ -3402,7 +3806,7 @@
         </member>
         <member name="T:HD.Common.ValidateImgPage">
             <summary>
-            验证码 继承 System.Web.UI.Page ，Session["xk_validate_code"]
+            验证码图片基类
             </summary>
         </member>
         <member name="M:HD.Common.ValidateImgPage.CreateImage(System.String)">
@@ -3443,6 +3847,19 @@
             <param name="Columns">要导出的数据列集合</param>
             <param name="ExcelFilePath">Excel文件路径</param>
         </member>
+        <member name="M:HD.Common.ExcelHelper.ExportData(System.String,System.String)">
+            <summary>
+            导出内容到客户端
+            </summary>
+            <param name="strContent">内容</param>
+            <param name="FileName">文件名</param>
+        </member>
+        <member name="M:HD.Common.ExcelHelper.ExportData(System.Web.UI.WebControls.GridView)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="obj"></param>
+        </member>
         <member name="M:HD.Common.ExcelHelper.GetExcelTables(System.String)">
             <summary>
             获取Excel文件数据表列表
@@ -3461,6 +3878,11 @@
             </summary>
             <param name="ExcelFileName">Excel文件名</param>
             <param name="TableName">数据表名</param>
+        </member>
+        <member name="T:HD.Common.ValidatorHelper">
+            <summary>
+            各种验证帮助类
+            </summary>
         </member>
         <member name="M:HD.Common.ValidatorHelper.IsEmail(System.String)">
             <summary>
@@ -3751,212 +4173,6 @@
             
             </summary>
         </member>
-        <member name="T:HD.Common.UploadEventArgs">
-            <summary>    
-            上传数据参数    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.UploadEventArgs.BytesSent">
-            <summary>       
-            已发送的字节数    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.UploadEventArgs.TotalBytes">
-            <summary>    
-            总字节数    
-            </summary>    
-        </member>
-        <member name="T:HD.Common.DownloadEventArgs">
-            <summary>    
-            下载数据参数    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.DownloadEventArgs.BytesReceived">
-            <summary>    
-            已接收的字节数    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.DownloadEventArgs.TotalBytes">
-            <summary>    
-            总字节数    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.DownloadEventArgs.ReceivedData">
-            <summary>    
-            当前缓冲区接收的数据    
-            </summary>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.#ctor">
-            <summary>    
-            创建WebClient的实例    
-            </summary>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.GetHtml(System.String)">
-            <summary>    
-             获取网页源代码    
-            </summary>    
-            <param name="url">网址</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.DownloadFile(System.String,System.String)">
-            <summary>    
-            下载文件    
-            </summary>    
-            <param name="url">文件URL地址</param>    
-            <param name="filename">文件保存完整路径</param>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.GetData(System.String)">
-            <summary>    
-            从指定URL下载数据    
-            </summary>    
-            <param name="url">网址</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.Post(System.String,System.String)">
-            <summary>    
-            向指定URL发送文本数据    
-            </summary>    
-            <param name="url">网址</param>    
-            <param name="postData">urlencode编码的文本数据</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.Post(System.String,System.Byte[])">
-            <summary>    
-            向指定URL发送字节数据    
-            </summary>    
-            <param name="url">网址</param>    
-            <param name="postData">发送的字节数组</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.Post(System.String,HD.Common.MultipartForm)">
-            <summary>    
-            向指定网址发送mulitpart编码的数据    
-            </summary>    
-            <param name="url">网址</param>    
-            <param name="mulitpartForm">mulitpart form data</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.GetData(System.Net.HttpWebRequest)">
-            <summary>    
-            读取请求返回的数据    
-            </summary>    
-            <param name="request">请求对象</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.PostData(System.Net.HttpWebRequest,System.Byte[])">
-            <summary>    
-            发送请求数据    
-            </summary>    
-            <param name="request">请求对象</param>    
-            <param name="postData">请求发送的字节数组</param>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.CreateRequest(System.String,System.String)">
-            <summary>    
-            创建HTTP请求    
-            </summary>    
-            <param name="url">URL地址</param>    
-            <returns></returns>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.SaveCookiesToDisk">
-            <summary>    
-            将Cookie保存到磁盘    
-            </summary>    
-        </member>
-        <member name="M:HD.Common.WebClientHelper.LoadCookiesFromDisk">
-            <summary>    
-            从磁盘加载Cookie    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.BufferSize">
-            <summary>    
-            设置发送和接收的数据缓冲大小    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.ResponseHeaders">
-            <summary>    
-            获取响应头集合    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.RequestHeaders">
-            <summary>    
-            获取请求头集合    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.Proxy">
-            <summary>    
-            获取或设置代理    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.Encoding">
-            <summary>    
-            获取或设置请求与响应的文本编码方式    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.RespHtml">
-            <summary>    
-            获取或设置响应的html代码    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.WebClientHelper.CookieContainer">
-            <summary>    
-            获取或设置与请求关联的Cookie容器    
-            </summary>    
-        </member>
-        <member name="T:HD.Common.MultipartForm">
-            <summary>    
-            对文件和文本数据进行Multipart形式的编码    
-            </summary>    
-        </member>
-        <member name="M:HD.Common.MultipartForm.#ctor">
-            <summary>    
-            实例化    
-            </summary>    
-        </member>
-        <member name="M:HD.Common.MultipartForm.AddFlie(System.String,System.String)">
-            <summary>    
-            添加一个文件    
-            </summary>    
-            <param name="name">文件域名称</param>    
-            <param name="filename">文件的完整路径</param>    
-        </member>
-        <member name="M:HD.Common.MultipartForm.AddFlie(System.String,System.String,System.Byte[],System.Int32)">
-            <summary>    
-            添加一个文件    
-            </summary>    
-            <param name="name">文件域名称</param>    
-            <param name="filename">文件名</param>    
-            <param name="fileData">文件二进制数据</param>    
-            <param name="dataLength">二进制数据大小</param>    
-        </member>
-        <member name="M:HD.Common.MultipartForm.AddString(System.String,System.String)">
-            <summary>    
-            添加字符串    
-            </summary>    
-            <param name="name">文本域名称</param>    
-            <param name="value">文本值</param>    
-        </member>
-        <member name="M:HD.Common.MultipartForm.GetContentType(System.String)">
-            <summary>    
-            从注册表获取文件类型    
-            </summary>    
-            <param name="filename">包含扩展名的文件名</param>    
-            <returns>如：application/stream</returns>    
-        </member>
-        <member name="P:HD.Common.MultipartForm.FormData">
-            <summary>    
-            获取编码后的字节数组    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.MultipartForm.ContentType">
-            <summary>    
-            获取此编码内容的类型    
-            </summary>    
-        </member>
-        <member name="P:HD.Common.MultipartForm.StringEncoding">
-            <summary>    
-            获取或设置对字符串采用的编码类型    
-            </summary>    
-        </member>
         <member name="T:HD.Common.JavaScriptHelper">
             <summary>
             JavaScript客户端脚本输出帮助类
@@ -4137,6 +4353,25 @@
             </summary>
             <param name="url"></param>
         </member>
+        <member name="T:HD.Common.MD5Encrypt">
+            <summary>
+            获取MD5值帮助类
+            </summary>
+        </member>
+        <member name="M:HD.Common.MD5Encrypt.GetStrMD5(System.String)">
+            <summary>
+            得到字符串的md5值
+            </summary>
+            <param name="str">传入的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:HD.Common.MD5Encrypt.GetFileMD5(System.String)">
+            <summary>
+            得到文件的md5值
+            </summary>
+            <param name="str">传入的文件路径</param>
+            <returns></returns>
+        </member>
         <member name="T:HD.Common.ConvertHelper">
             <summary>
             处理数据类型转换，数制转换、编码转换相关的类
@@ -4178,561 +4413,461 @@
             </summary>
             <param name="data">需要转换成整数的byte数组</param>
         </member>
-        <member name="T:HD.Common.ChineseCalHelper">
+        <member name="T:HD.Common.MessageBoxHelper">
             <summary>
-            中国日历
+            页面中弹出对话框帮助类
             </summary>
         </member>
-        <member name="F:HD.Common.ChineseCalHelper.LunarDateArray">
-             <summary>
-             来源于网上的农历数据
-             </summary>
-             <remarks>
-             数据结构如下，共使用17位数据
-             第17位：表示闰月天数，0表示29天   1表示30天
-             第16位-第5位（共12位）表示12个月，其中第16位表示第一月，如果该月为30天则为1，29天为0
-             第4位-第1位（共4位）表示闰月是哪个月，如果当年没有闰月，则置0
-            </remarks>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.#ctor(System.DateTime)">
-            <summary>
-            用一个标准的公历日期来初使化
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
-            <summary>
-            用农历的日期来初使化
-            </summary>
-            <param name="cy">农历年</param>
-            <param name="cm">农历月</param>
-            <param name="cd">农历日</param>
-            <param name="LeapFlag">闰月标志</param>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.GetChineseMonthDays(System.Int32,System.Int32)">
-            <summary>
-            //传回农历y年m月的总天数
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.GetChineseLeapMonth(System.Int32)">
-            <summary>
-            传回农历 y年闰哪个月 1-12 , 没闰传回 0
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.GetChineseLeapMonthDays(System.Int32)">
-            <summary>
-            传回农历y年闰月的天数
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.GetChineseYearDays(System.Int32)">
-            <summary>
-            取农历年一年的天数
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.GetChineseHour(System.DateTime)">
-            <summary>
-            获得当前时间的时辰
-            </summary> 
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.CheckDateLimit(System.DateTime)">
-            <summary>
-            检查公历日期是否符合要求
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.CheckChineseDateLimit(System.Int32,System.Int32,System.Int32,System.Boolean)">
-            <summary>
-            检查农历日期是否合理
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.ConvertNumToChineseNum(System.Char)">
-            <summary>
-            将0-9转成汉字形式
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.BitTest32(System.Int32,System.Int32)">
-            <summary>
-            测试某位是否为真
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.ConvertDayOfWeek(System.DayOfWeek)">
-            <summary>
-            将星期几转成数字表示
-            </summary>
-        </member>
-        <member name="M:HD.Common.ChineseCalHelper.CompareWeekDayHoliday(System.DateTime,System.Int32,System.Int32,System.Int32)">
-            <summary>
-            比较当天是不是指定的第周几
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.newCalendarHoliday">
-            <summary>
-            计算中国农历节日
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.WeekDayHoliday">
-            <summary>
-            按某月第几周第几日计算的节日
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.DateHoliday">
-            <summary>
-            按公历日计算的节日
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.Date">
-            <summary>
-            取对应的公历日期
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.WeekDay">
-            <summary>
-            取星期几
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.WeekDayStr">
-            <summary>
-            周几的字符
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.DateString">
-            <summary>
-            公历日期中文表示法 如一九九七年七月一日
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.IsLeapYear">
-            <summary>
-            当前是否公历闰年
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseConstellation">
-            <summary>
-            28星宿计算
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseHour">
-            <summary>
-            时辰
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.IsChineseLeapMonth">
-            <summary>
-            是否闰月
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.IsChineseLeapYear">
-            <summary>
-            当年是否有闰月
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseDay">
-            <summary>
-            农历日
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseDayString">
-            <summary>
-            农历日中文表示
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseMonth">
-            <summary>
-            农历的月份
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseMonthString">
-            <summary>
-            农历月份字符串
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseYear">
-            <summary>
-            取农历年份
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseYearString">
-            <summary>
-            取农历年字符串如，一九九七年
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseDateString">
-            <summary>
-            取农历日期表示法：农历一九九七年正月初五
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.ChineseTwentyFourDay">
-            <summary>
-            定气法计算二十四节气,二十四节气是按地球公转来计算的，并非是阴历计算的
-            </summary>
-            <remarks>
-            节气的定法有两种。古代历法采用的称为"恒气"，即按时间把一年等分为24份，
-            每一节气平均得15天有余，所以又称"平气"。现代农历采用的称为"定气"，即
-            按地球在轨道上的位置为标准，一周360°，两节气之间相隔15°。由于冬至时地
-            球位于近日点附近，运动速度较快，因而太阳在黄道上移动15°的时间不到15天。
-            夏至前后的情况正好相反，太阳在黄道上移动较慢，一个节气达16天之多。采用
-            定气时可以保证春、秋两分必然在昼夜平分的那两天。
-            </remarks>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.Constellation">
-            <summary>
-            计算指定日期的星座序号 
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.Animal">
-            <summary>
-            计算属相的索引，注意虽然属相是以农历年来区别的，但是目前在实际使用中是按公历来计算的
-            鼠年为1,其它类推
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.AnimalString">
-            <summary>
-            取属相字符串
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.GanZhiYearString">
-            <summary>
-            取农历年的干支表示法如 乙丑年
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.GanZhiMonthString">
-            <summary>
-            取干支的月表示字符串，注意农历的闰月不记干支
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.GanZhiDayString">
-            <summary>
-            取干支日表示法
-            </summary>
-        </member>
-        <member name="P:HD.Common.ChineseCalHelper.GanZhiDateString">
-            <summary>
-            取当前日期的干支表示法如 甲子年乙丑月丙庚日
-            </summary>
-        </member>
-        <member name="T:HD.Common.ChineseCalHelper.SolarHolidayStruct">
-            <summary>
-            阳历
-            </summary>
-        </member>
-        <member name="T:HD.Common.ChineseCalHelper.LunarHolidayStruct">
-            <summary>
-            农历
-            </summary>
-        </member>
-        <member name="T:HD.Common.TimeHelper">
-            <summary>
-            时间帮助类
-            </summary>
-        </member>
-        <member name="M:HD.Common.TimeHelper.SecondToMinute(System.Int32)">
-            <summary>
-            把秒转换成分钟
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.DateDiff2(System.DateTime,System.DateTime)">
-            <summary>
-            获得两个日期的间隔
-            </summary>
-            <param name="DateTime1">日期一。</param>
-            <param name="DateTime2">日期二。</param>
-            <returns>日期间隔TimeSpan。</returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.FormatDate(System.DateTime,System.String)">
-            <summary>
-            格式化日期时间
-            </summary>
-            <param name="dateTime1">日期时间</param>
-            <param name="dateMode">显示模式</param>
-            <returns>0-9种模式的日期</returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.GetFormatDate(System.DateTime,System.Char)">
-            <summary>
-            将时间格式化成 年月日 的形式,如果时间为null，返回当前系统时间
-            </summary>
-            <param name="dt">年月日分隔符</param>
-            <param name="Separator"></param>
-            <returns></returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.GetFormatTime(System.DateTime,System.Char)">
-            <summary>
-            将时间格式化成 时分秒 的形式,如果时间为null，返回当前系统时间
-            </summary>
-            <param name="dt"></param>
-            <param name="Separator"></param>
-            <returns></returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.GetRandomTime(System.DateTime,System.DateTime)">
-            <summary>
-            得到随机日期
-            </summary>
-            <param name="time1">起始日期</param>
-            <param name="time2">结束日期</param>
-            <returns>间隔日期之间的 随机日期</returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.GetMonthLastDate(System.Int32,System.Int32)">
-            <summary>
-            返回某年某月最后一天
-            </summary>
-            <param name="year">年份</param>
-            <param name="month">月份</param>
-            <returns>日</returns>
-        </member>
-        <member name="M:HD.Common.TimeHelper.ReturnDateFormat(System.Int32,System.String@,System.String@)">
-            <summary>
-            返回每月的第一天和最后一天
-            </summary>
-            <param name="month"></param>
-            <param name="firstDay"></param>
-            <param name="lastDay"></param>
-        </member>
-        <member name="T:HD.Common.Base64DEncrypt">
-            <summary>
-            Base64加解密帮助类
-            </summary>
-        </member>
-        <member name="M:HD.Common.Base64DEncrypt.EncodeBase64(System.String)">
-            <summary>
-            Base64加密
-            </summary>
-            <param name="text">要加密的字符串</param>
-            <returns></returns>
-        </member>
-        <member name="M:HD.Common.Base64DEncrypt.DecodeBase64(System.String)">
-            <summary>
-            Base64解密
-            </summary>
-            <param name="text">要解密的字符串</param>
-        </member>
-        <member name="T:HD.Common.DESDEncrypt">
-            <summary>
-            DES加密/解密帮助类。
-            </summary>
-        </member>
-        <member name="F:HD.Common.DESDEncrypt.defaultKey">
-            <summary>
-            默认密钥
-            </summary>
-        </member>
-        <member name="M:HD.Common.DESDEncrypt.#ctor">
+        <member name="M:HD.Common.MessageBoxHelper.#ctor">
             <summary>
             构造函数
             </summary>
         </member>
-        <member name="M:HD.Common.DESDEncrypt.Encrypt(System.String)">
+        <member name="M:HD.Common.MessageBoxHelper.Show(System.Web.UI.Page,System.String)">
             <summary>
-            加密
+            显示消息提示对话框
             </summary>
-            <param name="Text"></param>
-            <returns></returns>
+            <param name="page">当前页面指针，一般为this</param>
+            <param name="msg">提示信息</param>
         </member>
-        <member name="M:HD.Common.DESDEncrypt.Encrypt(System.String,System.String)">
-            <summary> 
-            加密数据 
-            </summary> 
-            <param name="Text"></param> 
-            <param name="sKey"></param> 
-            <returns></returns> 
-        </member>
-        <member name="M:HD.Common.DESDEncrypt.Decrypt(System.String)">
+        <member name="M:HD.Common.MessageBoxHelper.ShowConfirm(System.Web.UI.WebControls.WebControl,System.String)">
             <summary>
-            解密
+            控件点击 消息确认提示框
             </summary>
-            <param name="Text"></param>
-            <returns></returns>
+            <param name="page">当前页面指针，一般为this</param>
+            <param name="msg">提示信息</param>
         </member>
-        <member name="M:HD.Common.DESDEncrypt.Decrypt(System.String,System.String)">
-            <summary> 
-            解密数据 
-            </summary> 
-            <param name="Text"></param> 
-            <param name="sKey"></param> 
-            <returns></returns> 
-        </member>
-        <member name="T:HD.Common.FileDEncrypt">
+        <member name="M:HD.Common.MessageBoxHelper.ShowAndRedirect(System.Web.UI.Page,System.String,System.String)">
             <summary>
-            文件加解密帮助类
+            显示消息提示对话框，并进行页面跳转
+            </summary>
+            <param name="page">当前页面指针，一般为this</param>
+            <param name="msg">提示信息</param>
+            <param name="url">跳转的目标URL</param>
+        </member>
+        <member name="M:HD.Common.MessageBoxHelper.ResponseScript(System.Web.UI.Page,System.String)">
+            <summary>
+            输出自定义脚本信息
+            </summary>
+            <param name="page">当前页面指针，一般为this</param>
+            <param name="script">输出脚本</param>
+        </member>
+        <member name="T:HD.Common.UploadEventArgs">
+            <summary>    
+            上传数据参数    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.UploadEventArgs.BytesSent">
+            <summary>       
+            已发送的字节数    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.UploadEventArgs.TotalBytes">
+            <summary>    
+            总字节数    
+            </summary>    
+        </member>
+        <member name="T:HD.Common.DownloadEventArgs">
+            <summary>    
+            下载数据参数    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.DownloadEventArgs.BytesReceived">
+            <summary>    
+            已接收的字节数    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.DownloadEventArgs.TotalBytes">
+            <summary>    
+            总字节数    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.DownloadEventArgs.ReceivedData">
+            <summary>    
+            当前缓冲区接收的数据    
+            </summary>    
+        </member>
+        <member name="T:HD.Common.WebClientHelper">
+            <summary>
+            网络客户端帮助类
             </summary>
         </member>
-        <member name="M:HD.Common.FileDEncrypt.#ctor">
-            <summary>
-            构造函数
-            </summary>
+        <member name="M:HD.Common.WebClientHelper.#ctor">
+            <summary>    
+            创建WebClient的实例    
+            </summary>    
         </member>
-        <member name="M:HD.Common.FileDEncrypt.EncryptFile(System.String,System.String,System.String)">
-            <summary>
-            加密文件
-            </summary>
-            <param name="filePath">输入文件路径</param>
-            <param name="savePath">加密后输出文件路径</param>
-            <param name="keyStr">密码，可以为“”</param>
-            <returns></returns>  
-        </member>
-        <member name="M:HD.Common.FileDEncrypt.DecryptFile(System.String,System.String,System.String)">
-            <summary>
-            解密文件
-            </summary>
-            <param name="filePath">输入文件路径</param>
-            <param name="savePath">解密后输出文件路径</param>
-            <param name="keyStr">密码，可以为“”</param>
+        <member name="M:HD.Common.WebClientHelper.GetHtml(System.String)">
+            <summary>    
+             获取网页源代码    
+            </summary>    
+            <param name="url">网址</param>    
             <returns></returns>    
         </member>
-        <member name="T:HD.Common.HashDEncrypt">
+        <member name="M:HD.Common.WebClientHelper.DownloadFile(System.String,System.String)">
+            <summary>    
+            下载文件    
+            </summary>    
+            <param name="url">文件URL地址</param>    
+            <param name="filename">文件保存完整路径</param>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.GetData(System.String)">
+            <summary>    
+            从指定URL下载数据    
+            </summary>    
+            <param name="url">网址</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.Post(System.String,System.String)">
+            <summary>    
+            向指定URL发送文本数据    
+            </summary>    
+            <param name="url">网址</param>    
+            <param name="postData">urlencode编码的文本数据</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.Post(System.String,System.Byte[])">
+            <summary>    
+            向指定URL发送字节数据    
+            </summary>    
+            <param name="url">网址</param>    
+            <param name="postData">发送的字节数组</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.Post(System.String,HD.Common.MultipartForm)">
+            <summary>    
+            向指定网址发送mulitpart编码的数据    
+            </summary>    
+            <param name="url">网址</param>    
+            <param name="mulitpartForm">mulitpart form data</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.GetData(System.Net.HttpWebRequest)">
+            <summary>    
+            读取请求返回的数据    
+            </summary>    
+            <param name="request">请求对象</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.PostData(System.Net.HttpWebRequest,System.Byte[])">
+            <summary>    
+            发送请求数据    
+            </summary>    
+            <param name="request">请求对象</param>    
+            <param name="postData">请求发送的字节数组</param>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.CreateRequest(System.String,System.String)">
+            <summary>    
+            创建HTTP请求    
+            </summary>    
+            <param name="url">URL地址</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.SaveCookiesToDisk">
+            <summary>    
+            将Cookie保存到磁盘    
+            </summary>    
+        </member>
+        <member name="M:HD.Common.WebClientHelper.LoadCookiesFromDisk">
+            <summary>    
+            从磁盘加载Cookie    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.BufferSize">
+            <summary>    
+            设置发送和接收的数据缓冲大小    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.ResponseHeaders">
+            <summary>    
+            获取响应头集合    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.RequestHeaders">
+            <summary>    
+            获取请求头集合    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.Proxy">
+            <summary>    
+            获取或设置代理    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.Encoding">
+            <summary>    
+            获取或设置请求与响应的文本编码方式    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.RespHtml">
+            <summary>    
+            获取或设置响应的html代码    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.WebClientHelper.CookieContainer">
+            <summary>    
+            获取或设置与请求关联的Cookie容器    
+            </summary>    
+        </member>
+        <member name="T:HD.Common.MultipartForm">
+            <summary>    
+            对文件和文本数据进行Multipart形式的编码    
+            </summary>    
+        </member>
+        <member name="M:HD.Common.MultipartForm.#ctor">
+            <summary>    
+            实例化    
+            </summary>    
+        </member>
+        <member name="M:HD.Common.MultipartForm.AddFlie(System.String,System.String)">
+            <summary>    
+            添加一个文件    
+            </summary>    
+            <param name="name">文件域名称</param>    
+            <param name="filename">文件的完整路径</param>    
+        </member>
+        <member name="M:HD.Common.MultipartForm.AddFlie(System.String,System.String,System.Byte[],System.Int32)">
+            <summary>    
+            添加一个文件    
+            </summary>    
+            <param name="name">文件域名称</param>    
+            <param name="filename">文件名</param>    
+            <param name="fileData">文件二进制数据</param>    
+            <param name="dataLength">二进制数据大小</param>    
+        </member>
+        <member name="M:HD.Common.MultipartForm.AddString(System.String,System.String)">
+            <summary>    
+            添加字符串    
+            </summary>    
+            <param name="name">文本域名称</param>    
+            <param name="value">文本值</param>    
+        </member>
+        <member name="M:HD.Common.MultipartForm.GetContentType(System.String)">
+            <summary>    
+            从注册表获取文件类型    
+            </summary>    
+            <param name="filename">包含扩展名的文件名</param>    
+            <returns>如：application/stream</returns>    
+        </member>
+        <member name="P:HD.Common.MultipartForm.FormData">
+            <summary>    
+            获取编码后的字节数组    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.MultipartForm.ContentType">
+            <summary>    
+            获取此编码内容的类型    
+            </summary>    
+        </member>
+        <member name="P:HD.Common.MultipartForm.StringEncoding">
+            <summary>    
+            获取或设置对字符串采用的编码类型    
+            </summary>    
+        </member>
+        <member name="T:HD.Common.XmlHelperExt">
             <summary>
-            得到随机安全码（哈希加密）。
+            xml操作帮助扩展类
             </summary>
         </member>
-        <member name="M:HD.Common.HashDEncrypt.#ctor">
+        <member name="M:HD.Common.XmlHelperExt.#ctor">
             <summary>
             构造函数
             </summary>
         </member>
-        <member name="M:HD.Common.HashDEncrypt.GetSecurity">
+        <member name="M:HD.Common.XmlHelperExt.#ctor(System.String)">
             <summary>
-            得到随机哈希加密字符串
+            构造函数
             </summary>
-            <returns></returns>
+            <param name="strPath">xml文件路径</param>
         </member>
-        <member name="M:HD.Common.HashDEncrypt.GetRandomValue">
+        <member name="M:HD.Common.XmlHelperExt.XMLLoad">
             <summary>
-            得到一个随机数值
+            导入XML文件
             </summary>
-            <returns></returns>
+            <param name="XMLPath">XML文件路径</param>
         </member>
-        <member name="M:HD.Common.HashDEncrypt.HashEncoding(System.String)">
+        <member name="M:HD.Common.XmlHelperExt.XMLLoad(System.String)">
             <summary>
-            哈希加密一个字符串
+            导入XML文件
             </summary>
-            <param name="Security"></param>
-            <returns></returns>
+            <param name="XMLPath">XML文件路径</param>
         </member>
-        <member name="T:HD.Common.MD5Encrypt">
+        <member name="M:HD.Common.XmlHelperExt.GetXmlFullPath(System.String)">
             <summary>
-            获取MD5值帮助类
+            返回完整路径
             </summary>
+            <param name="strPath">Xml的路径</param>
         </member>
-        <member name="M:HD.Common.MD5Encrypt.GetStrMD5(System.String)">
+        <member name="M:HD.Common.XmlHelperExt.Read(System.String)">
             <summary>
-            得到字符串的md5值
+            读取指定节点的数据
             </summary>
-            <param name="str">传入的字符串</param>
-            <returns></returns>
+            <param name="node">节点</param>
+            使用示列:
+            XMLProsess.Read("/Node", "")
+            XMLProsess.Read("/Node/Element[@Attribute='Name']")
         </member>
-        <member name="M:HD.Common.MD5Encrypt.GetFileMD5(System.String)">
+        <member name="M:HD.Common.XmlHelperExt.Read(System.String,System.String)">
             <summary>
-            得到文件的md5值
+            读取指定路径和节点的串联值
             </summary>
-            <param name="str">传入的文件路径</param>
-            <returns></returns>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时返回该属性值，否则返回串联值</param>
+            使用示列:
+            XMLProsess.Read(path, "/Node", "")
+            XMLProsess.Read(path, "/Node/Element[@Attribute='Name']")
         </member>
-        <member name="T:HD.Common.RSADEncrypt">
+        <member name="M:HD.Common.XmlHelperExt.Read(System.String,System.String,System.String)">
+            <summary>
+            读取指定路径和节点的属性值
+            </summary>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时返回该属性值，否则返回串联值</param>
+            使用示列:
+            XMLProsess.Read(path, "/Node", "")
+            XMLProsess.Read(path, "/Node/Element[@Attribute='Name']", "Attribute")
+        </member>
+        <member name="M:HD.Common.XmlHelperExt.ReadAllChildallValue(System.String)">
+            <summary>
+            获取某一节点的所有孩子节点的值
+            </summary>
+            <param name="node">要查询的节点</param>
+        </member>
+        <member name="M:HD.Common.XmlHelperExt.ReadAllChild(System.String)">
+            <summary>
+            获取某一节点的所有孩子节点的值
+            </summary>
+            <param name="node">要查询的节点</param>
+        </member>
+        <member name="M:HD.Common.XmlHelperExt.GetDataViewByXml(System.String,System.String)">
             <summary> 
-            RSA加密解密及RSA签名和验证
-            </summary> 
-        </member>
-        <member name="M:HD.Common.RSADEncrypt.#ctor">
-            <summary>
-            构造函数
+            读取XML返回经排序或筛选后的DataView
             </summary>
+            <param name="strWhere">筛选条件，如:"name='kgdiwss'"</param>
+            <param name="strSort"> 排序条件，如:"Id desc"</param>
         </member>
-        <member name="M:HD.Common.RSADEncrypt.RSAKey(System.String@,System.String@)">
+        <member name="M:HD.Common.XmlHelperExt.GetDataSetByXml(System.String)">
             <summary>
-            RSA 的密钥产生 产生私钥 和公钥 
+            读取XML返回DataSet
             </summary>
-            <param name="xmlKeys"></param>
-            <param name="xmlPublicKey"></param>
+            <param name="strXmlPath">XML文件相对路径</param>
         </member>
-        <member name="T:HD.Common.TripleDESDEncrypt">
+        <member name="M:HD.Common.XmlHelperExt.Insert(System.String,System.String,System.String,System.String,System.String)">
             <summary>
-            TripleDES加解密帮助类
+            插入数据
             </summary>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="element">元素名，非空时插入新元素，否则在该元素中插入属性</param>
+            <param name="attribute">属性名，非空时插入该元素属性值，否则插入元素值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Insert(path, "/Node", "Element", "", "Value")
+            XMLProsess.Insert(path, "/Node", "Element", "Attribute", "Value")
+            XMLProsess.Insert(path, "/Node", "", "Attribute", "Value")
         </member>
-        <member name="F:HD.Common.TripleDESDEncrypt.defaultKey">
+        <member name="M:HD.Common.XmlHelperExt.Insert(System.String,System.String,System.String,System.String[][])">
             <summary>
-            默认密钥
+            插入数据
             </summary>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="element">元素名，非空时插入新元素，否则在该元素中插入属性</param>
+            <param name="strList">由XML属性名和值组成的二维数组</param>
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.#ctor">
+        <member name="M:HD.Common.XmlHelperExt.WriteXmlByDataSet(System.String,System.String[],System.String[])">
             <summary>
-            构造方法
+            插入一行数据
             </summary>
+            <param name="strXmlPath">XML文件相对路径</param>
+            <param name="Columns">要插入行的列名数组，如：string[] Columns = {"name","IsMarried"};</param>
+            <param name="ColumnValue">要插入行每列的值数组，如：string[] ColumnValue={"XML大全","false"};</param>
+            <returns>成功返回true,否则返回false</returns>
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.String)">
+        <member name="M:HD.Common.XmlHelperExt.Update(System.String,System.String)">
             <summary>
-            使用缺省密钥字符串加密string
+            修改指定节点的数据
             </summary>
-            <param name="original">明文</param>
-            <returns>密文</returns>
+            <param name="node">节点</param>
+            <param name="value">值</param>
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.String)">
+        <member name="M:HD.Common.XmlHelperExt.Update(System.String,System.String,System.String)">
             <summary>
-            使用缺省密钥字符串解密string
+            修改指定节点的数据
             </summary>
-            <param name="original">密文</param>
-            <returns>明文</returns>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Insert(path, "/Node","Value")
+            XMLProsess.Insert(path, "/Node","Value")
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.String,System.String)">
+        <member name="M:HD.Common.XmlHelperExt.Update(System.String,System.String,System.String,System.String)">
             <summary>
-            使用给定密钥字符串加密string
+            修改指定节点的属性值(静态)
             </summary>
-            <param name="original">原始文字</param>
-            <param name="key">密钥</param>
-            <param name="encoding">字符编码方案</param>
-            <returns>密文</returns>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时修改该节点属性值，否则修改节点值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Insert(path, "/Node", "", "Value")
+            XMLProsess.Insert(path, "/Node", "Attribute", "Value")
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.String,System.String)">
+        <member name="M:HD.Common.XmlHelperExt.UpdateXmlRow(System.String,System.String[],System.String[],System.String,System.String)">
             <summary>
-            使用给定密钥字符串解密string
+            更改符合条件的一条记录
             </summary>
-            <param name="original">密文</param>
-            <param name="key">密钥</param>
-            <returns>明文</returns>
+            <param name="strXmlPath">XML文件路径</param>
+            <param name="Columns">列名数组</param>
+            <param name="ColumnValue">列值数组</param>
+            <param name="strWhereColumnName">条件列名</param>
+            <param name="strWhereColumnValue">条件列值</param>
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.String,System.String,System.Text.Encoding)">
+        <member name="M:HD.Common.XmlHelperExt.Delete(System.String,System.String)">
             <summary>
-            使用给定密钥字符串解密string,返回指定编码方式明文
+            删除节点值
             </summary>
-            <param name="encrypted">密文</param>
-            <param name="key">密钥</param>
-            <param name="encoding">字符编码方案</param>
-            <returns>明文</returns>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时删除该节点属性值，否则删除节点值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Delete(path, "/Node", "")
+            XMLProsess.Delete(path, "/Node", "Attribute")
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.Byte[])">
+        <member name="M:HD.Common.XmlHelperExt.Delete(System.String,System.String,System.String)">
             <summary>
-            使用缺省密钥字符串解密byte[]
+            删除数据
             </summary>
-            <param name="encrypted">密文</param>
-            <param name="key">密钥</param>
-            <returns>明文</returns>
+            <param name="path">路径</param>
+            <param name="node">节点</param>
+            <param name="attribute">属性名，非空时删除该节点属性值，否则删除节点值</param>
+            <param name="value">值</param>
+            使用示列:
+            XMLProsess.Delete(path, "/Node", "")
+            XMLProsess.Delete(path, "/Node", "Attribute")
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.Byte[])">
+        <member name="M:HD.Common.XmlHelperExt.DeleteXmlAllRows(System.String)">
             <summary>
-            使用缺省密钥字符串加密
+            删除所有行
             </summary>
-            <param name="original">原始数据</param>
-            <param name="key">密钥</param>
-            <returns>密文</returns>
+            <param name="strXmlPath">XML路径</param>
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.MakeMD5(System.Byte[])">
+        <member name="M:HD.Common.XmlHelperExt.DeleteXmlRowByIndex(System.String,System.Int32)">
             <summary>
-            生成MD5摘要
+            通过删除DataSet中指定索引行，重写XML以实现删除指定行
             </summary>
-            <param name="original">数据源</param>
-            <returns>摘要</returns>
+            <param name="iDeleteRow">要删除的行在DataSet中的Index值</param>
         </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Encrypt(System.Byte[],System.Byte[])">
+        <member name="M:HD.Common.XmlHelperExt.DeleteXmlRows(System.String,System.String,System.String[])">
             <summary>
-            使用给定密钥加密
+            删除指定列中指定值的行
             </summary>
-            <param name="original">明文</param>
-            <param name="key">密钥</param>
-            <returns>密文</returns>
-        </member>
-        <member name="M:HD.Common.TripleDESDEncrypt.Decrypt(System.Byte[],System.Byte[])">
-            <summary>
-            使用给定密钥解密数据
-            </summary>
-            <param name="encrypted">密文</param>
-            <param name="key">密钥</param>
-            <returns>明文</returns>
+            <param name="strXmlPath">XML相对路径</param>
+            <param name="strColumn">列名</param>
+            <param name="ColumnValue">指定值</param>
         </member>
     </members>
 </doc>

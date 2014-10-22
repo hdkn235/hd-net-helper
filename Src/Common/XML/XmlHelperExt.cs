@@ -5,13 +5,23 @@ using System.Xml;
 
 namespace HD.Common
 {
-    public class XMLProcess
+    /// <summary>
+    /// xml操作帮助扩展类
+    /// </summary>
+    public class XmlHelperExt
     {
         #region 构造函数
-        public XMLProcess()
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        public XmlHelperExt()
         { }
 
-        public XMLProcess(string strPath)
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="strPath">xml文件路径</param>
+        public XmlHelperExt(string strPath)
         {
             this._XMLPath = strPath;
         }

@@ -8,6 +8,9 @@ using System.Web;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// Html操作相关类
+    /// </summary>
     public class HtmlHelper
     {
         #region 私有字段

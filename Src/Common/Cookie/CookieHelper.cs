@@ -3,6 +3,9 @@ using System.Web;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// Cookie帮助相关类
+    /// </summary>
     public class CookieHelper
     {
         /// <summary>

@@ -18,6 +18,7 @@ namespace HD.Common
     {
         int bytesSent;
         int totalBytes;
+
         /// <summary>       
         /// 已发送的字节数    
         /// </summary>    
@@ -26,6 +27,7 @@ namespace HD.Common
             get { return bytesSent; }
             set { bytesSent = value; }
         }
+
         /// <summary>    
         /// 总字节数    
         /// </summary>    
@@ -43,6 +45,7 @@ namespace HD.Common
         int bytesReceived;
         int totalBytes;
         byte[] receivedData;
+
         /// <summary>    
         /// 已接收的字节数    
         /// </summary>    
@@ -51,6 +54,7 @@ namespace HD.Common
             get { return bytesReceived; }
             set { bytesReceived = value; }
         }
+
         /// <summary>    
         /// 总字节数    
         /// </summary>    
@@ -59,6 +63,7 @@ namespace HD.Common
             get { return totalBytes; }
             set { totalBytes = value; }
         }
+
         /// <summary>    
         /// 当前缓冲区接收的数据    
         /// </summary>    
@@ -69,6 +74,9 @@ namespace HD.Common
         }
     }
 
+    /// <summary>
+    /// 网络客户端帮助类
+    /// </summary>
     public class WebClientHelper
     {
         Encoding encoding = Encoding.Default;

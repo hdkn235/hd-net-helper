@@ -3,13 +3,23 @@ using System.Configuration;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 视频帮助类
+    /// </summary>
     public class VideoHelper : System.Web.UI.Page
     {
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public VideoHelper()
-        { }
+        { } 
+        #endregion
 
+        #region 私有变量
         string[] strArrMencoder = new string[] { "wmv", "rmvb", "rm" };
-        string[] strArrFfmpeg = new string[] { "asf", "avi", "mpg", "3gp", "mov" };
+        string[] strArrFfmpeg = new string[] { "asf", "avi", "mpg", "3gp", "mov" }; 
+        #endregion
 
         #region 配置
         public static string ffmpegtool = ConfigurationManager.AppSettings["ffmpeg"];

@@ -9,10 +9,18 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 序列化帮助类
+    /// </summary>
     public class SerializeHelper
     {
-        public SerializeHelper()
-        { }
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        private SerializeHelper()
+        { } 
+        #endregion
 
         #region XML序列化
         /// <summary>
@@ -82,7 +90,7 @@ namespace HD.Common
         /// 文本化XML反序列化
         /// </summary>
         /// <param name="str">字符串序列</param>
-        public T FromXml<T>(string str)
+        public static T FromXml<T>(string str)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
             using (XmlReader reader = new XmlTextReader(new StringReader(str)))
@@ -93,10 +101,10 @@ namespace HD.Common
         #endregion
 
         #region Json序列化
-        /// <summary>
-        /// JsonSerializer序列化
-        /// </summary>
-        /// <param name="item">对象</param>
+        ///// <summary>
+        ///// JsonSerializer序列化
+        ///// </summary>
+        ///// <param name="item">对象</param>
         //public string ToJson<T>(T item)
         //{
         //    DataContractJsonSerializer serializer = new DataContractJsonSerializer(item.GetType());
@@ -126,7 +134,7 @@ namespace HD.Common
         /// SoapFormatter序列化
         /// </summary>
         /// <param name="item">对象</param>
-        public string ToSoap<T>(T item)
+        public static string ToSoap<T>(T item)
         {
             SoapFormatter formatter = new SoapFormatter();
             using (MemoryStream ms = new MemoryStream())
@@ -143,7 +151,7 @@ namespace HD.Common
         /// SoapFormatter反序列化
         /// </summary>
         /// <param name="str">字符串序列</param>
-        public T FromSoap<T>(string str)
+        public static T FromSoap<T>(string str)
         {
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.LoadXml(str);
@@ -162,7 +170,7 @@ namespace HD.Common
         /// BinaryFormatter序列化
         /// </summary>
         /// <param name="item">对象</param>
-        public string ToBinary<T>(T item)
+        public static string ToBinary<T>(T item)
         {
             BinaryFormatter formatter = new BinaryFormatter();
             using (MemoryStream ms = new MemoryStream())
@@ -183,7 +191,7 @@ namespace HD.Common
         /// BinaryFormatter反序列化
         /// </summary>
         /// <param name="str">字符串序列</param>
-        public T FromBinary<T>(string str)
+        public static T FromBinary<T>(string str)
         {
             int intLen = str.Length / 2;
             byte[] bytes = new byte[intLen];

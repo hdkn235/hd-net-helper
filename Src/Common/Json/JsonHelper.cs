@@ -8,7 +8,9 @@ using System.Data.Common;
 
 namespace HD.Common
 {
-    //JSON转换类
+    /// <summary>
+    /// JSON转换帮助类
+    /// </summary>
     public class JsonHelper
     {
         #region 私有方法

@@ -7,6 +7,9 @@ using System.Text;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 网页帮助类
+    /// </summary>
     public class PageHelper
     {
         #region 控件状态设置

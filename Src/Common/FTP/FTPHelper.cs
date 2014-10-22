@@ -4,6 +4,9 @@ using System.IO;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// Ftp∞Ô÷˙¿‡
+    /// </summary>
     public class FTPHelper
     {
         #region  Ù–‘

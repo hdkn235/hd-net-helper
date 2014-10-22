@@ -10,6 +10,9 @@ using System.Net.Mail;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 使用smtp发送邮件帮助类
+    /// </summary>
     public class MailSmtpHelper
     {
         #region 默认配置信息

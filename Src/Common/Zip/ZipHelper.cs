@@ -9,7 +9,7 @@ using ICSharpCode.SharpZipLib.Zip;
 namespace HD.Common
 {
     /// <summary>
-    /// 压缩、解压缩类
+    /// Zip压缩、解压缩类
     /// </summary>
     public class ZipHelper
     {

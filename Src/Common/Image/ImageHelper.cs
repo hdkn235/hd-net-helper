@@ -7,10 +7,18 @@ using System.Drawing.Drawing2D;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 图片处理帮助类
+    /// </summary>
     public class ImageHelper
     {
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public ImageHelper()
-        { }
+        { } 
+        #endregion
 
         #region 缩略图
         /// <summary>

@@ -7,12 +7,18 @@ namespace HD.Common
 {
     /// <summary>
     /// INI文件读写类。
-    /// Copyright (C) Maticsoft
     /// </summary>
 	public class INIFileHelper
 	{
+        /// <summary>
+        /// Ini文件路径
+        /// </summary>
 		public string path;
 
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="INIPath"></param>
 		public INIFileHelper(string INIPath)
 		{
 			path = INIPath;

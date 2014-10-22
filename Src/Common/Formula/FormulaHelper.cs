@@ -21,7 +21,7 @@ namespace HD.Common
     }
 
     /// <summary>
-    /// FormulaDeal
+    /// 数学函数帮助类
     /// </summary>
     public class FormulaHelper
     {

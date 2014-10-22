@@ -6,6 +6,9 @@ using Microsoft.International.Converters.PinYinConverter;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 中文转换拼音帮助类
+    /// </summary>
     public class PinYinHelper
     {
         /// <summary>

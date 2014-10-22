@@ -3,9 +3,7 @@
 namespace HD.Common
 {
     /// <summary>
-    /// Session 操作类
-    /// 1、GetSession(string name)根据session名获取session对象
-    /// 2、SetSession(string name, object val)设置session
+    /// Session操作类
     /// </summary>
     public class SessionHelper
     {

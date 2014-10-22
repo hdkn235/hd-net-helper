@@ -29,6 +29,9 @@ using System.Text.RegularExpressions;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// 各种验证帮助类
+    /// </summary>
     public class ValidatorHelper
     {
         #region 验证邮箱

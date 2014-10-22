@@ -5,7 +5,7 @@ using System.Text;
 namespace HD.Common
 {
     /// <summary> 
-    /// RMBHelper 的摘要说明。 
+    /// 人民币帮助类 
     /// </summary> 
     public class RMBHelper
     {

@@ -8,7 +8,7 @@ using System.Text;
 namespace HD.Common
 {
     /// <summary>
-    /// Summary description for GridViewExport
+    /// GridView导出Excel相关类
     /// </summary>
     public class GridViewExport
     {

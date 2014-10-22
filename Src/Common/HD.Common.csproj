@@ -115,16 +115,15 @@
     <Compile Include="NPOI\NPOIHelper.cs" />
     <Compile Include="Excel\DataToExcel.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
-    <Compile Include="Excel\ExportExcel.cs" />
     <Compile Include="Excel\GridViewExport.cs" />
     <Compile Include="FTP\FTPClient.cs" />
     <Compile Include="FTP\FTPHelper.cs" />
     <Compile Include="Html\HtmlHelper.cs" />
-    <Compile Include="Html\WebClientHelper.cs" />
+    <Compile Include="Net\WebClientHelper.cs" />
     <Compile Include="File\INIFileHelper.cs" />
     <Compile Include="Json\JsonHelper.cs" />
     <Compile Include="Mail\MailSmtpHelper.cs" />
-    <Compile Include="Message\MessageHelper.cs" />
+    <Compile Include="Message\MessageBoxHelper.cs" />
     <Compile Include="Page\PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -150,7 +149,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="XML\XmlHelper.cs" />
-    <Compile Include="XML\XMLProcess.cs" />
+    <Compile Include="XML\XmlHelperExt.cs" />
     <Compile Include="Zip\ZipHelper.cs" />
   </ItemGroup>
   <ItemGroup />

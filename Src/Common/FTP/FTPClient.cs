@@ -7,6 +7,9 @@ using System.Threading;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// Ftp客户端相关类
+    /// </summary>
     public class FTPClient
     {
         public static object obj = new object();

@@ -2,12 +2,19 @@
 
 namespace HD.Common
 {
-    //页面中弹出对话框
-    public class MessageBox
+    /// <summary>
+    /// 页面中弹出对话框帮助类
+    /// </summary>
+    public class MessageBoxHelper
     {
-        private MessageBox()
+        #region 构造函数
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        private MessageBoxHelper()
         {
-        }
+        } 
+        #endregion
 
         #region 显示消息提示对话框
         /// <summary>

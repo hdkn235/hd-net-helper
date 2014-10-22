@@ -16,6 +16,9 @@ using NPOI.SS.Util;
 
 namespace HD.Common
 {
+    /// <summary>
+    /// NPOI操作帮助类
+    /// </summary>
     public class NPOIHelper
     {       
         /// <summary>  

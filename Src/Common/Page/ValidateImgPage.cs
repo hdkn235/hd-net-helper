@@ -4,7 +4,7 @@ using System.Drawing;
 namespace HD.Common
 {
     /// <summary>
-    /// 验证码 继承 System.Web.UI.Page ，Session["xk_validate_code"]
+    /// 验证码图片基类
     /// </summary>
     public class ValidateImgPage : System.Web.UI.Page
     {

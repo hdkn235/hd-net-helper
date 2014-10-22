@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="2014.5.31.0" projectFile="E:\Projects\Helper\Doc\Helper.shfbproj" started="2014/10/21 星期二 23:24:00">
+<shfbBuild product="Sandcastle Help File Builder" version="2014.5.31.0" projectFile="E:\Projects\Helper\Doc\Helper.shfbproj" started="2014/10/22 星期三 22:54:22">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;D:\Program Files\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -21,16 +21,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (zh-CHS, 中文(简体) - 传统用法)...
 SHFB: Warning BE0003: Sandcastle shared content for the &#39;zh-CHS, 中文(简体) - 传统用法&#39; language could not be found.  Using &#39;en-US, English (US)&#39; defaults.
-    Last step completed in 00:00:00.0090
+    Last step completed in 00:00:00.2150
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0050
+    Last step completed in 00:00:00.0600
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
-生成启动时间为 2014/10/21 星期二 23:24:01。
+生成启动时间为 2014/10/22 星期三 22:54:25。
 节点 1 上的项目“E:\Projects\Helper\Doc\Help\Working\GenerateRefInfo.proj”(默认目标)。
 PrepareForBuild:
   正在创建目录“obj\Debug\”。
@@ -39,7 +39,7 @@ GenerateRefInfo:
   Copyright ? 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2014, Eric Woodruff, All Rights Reserved.
   Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 1 namespaces, 77 types, and 754 members
+  Wrote information on 1 namespaces, 76 types, and 751 members
   正在将文件从“reflection.org”复制到“reflection.all”。
   XslTransform (v2014.5.31.0)
   Copyright ? 2006-2014, Microsoft Corporation, All Rights Reserved.
@@ -49,13 +49,13 @@ GenerateRefInfo:
 
 已成功生成。
 
-已用时间 00:00:00.93
-    Last step completed in 00:00:01.1091
+已用时间 00:00:03.62
+    Last step completed in 00:00:05.5043
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
-生成启动时间为 2014/10/21 星期二 23:24:02。
+生成启动时间为 2014/10/22 星期三 22:54:30。
 节点 1 上的项目“E:\Projects\Helper\Doc\Help\Working\TransformManifest.proj”(默认目标)。
 TransformManifest:
   XslTransform (v2014.5.31.0)
@@ -75,26 +75,26 @@ TransformManifest:
 
 已成功生成。
 
-已用时间 00:00:01.41
-    Last step completed in 00:00:01.6541
+已用时间 00:00:04.41
+    Last step completed in 00:00:05.1053
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0800
+    Last step completed in 00:00:00.1970
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0040
+    Last step completed in 00:00:00.0100
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
-生成启动时间为 2014/10/21 星期二 23:24:03。
+生成启动时间为 2014/10/22 星期三 22:54:35。
 节点 1 上的项目“E:\Projects\Helper\Doc\Help\Working\GenerateIntermediateTOC.proj”(默认目标)。
 GenerateIntermediateTOC:
   XslTransform (v2014.5.31.0)
@@ -105,24 +105,24 @@ GenerateIntermediateTOC:
 
 已成功生成。
 
-已用时间 00:00:00.28
+已用时间 00:00:00.40
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.5050
+    Last step completed in 00:00:01.6261
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.1110
+    Last step completed in 00:00:00.1900
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 E:\Projects\Helper\Doc\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0470
+    Last step completed in 00:00:00.0460
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe]
-生成启动时间为 2014/10/21 星期二 23:24:04。
+生成启动时间为 2014/10/22 星期三 22:54:36。
 节点 1 上的项目“E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj”(默认目标)。
 BuildReferenceTopics:
   BuildAssembler (v2014.5.31.0)
@@ -154,7 +154,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ConvertHelper.Byte
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ConvertHelper.ConvertBase(System.String,System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ConvertHelper.RepairZero(System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ConvertHelper.StringToBytes(System.String,System.Text.Encoding)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.CookieHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.CookieHelper.GetCookieValue(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.CookieHelper.SetCookie(System.String,System.String)] Missing &lt;param name=&quot;cookiename&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.CookieHelper.SetCookie(System.String,System.String)] Missing &lt;param name=&quot;cookievalue&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -191,41 +190,36 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.DataTa
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.DataTable2Excel(System.Data.DataTable)] Missing &lt;param name=&quot;dtData&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.DataTable3Excel(System.Data.DataTable,System.String)] Missing &lt;param name=&quot;dtData&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.DataTable3Excel(System.Data.DataTable,System.String)] Missing &lt;param name=&quot;FileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.ExportData(System.Web.UI.WebControls.GridView)] Missing &lt;param name=&quot;obj&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.GetExcelTableColumns(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.GetExcelTables(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.GetExcelTables(System.String)] Missing &lt;param name=&quot;ExcelFileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.InputFromExcel(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.OutputToExcel(System.Data.DataTable,System.Collections.ArrayList,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExcelHelper.OutputToExcel(System.Data.DataTable,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.ExportExcel] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExportExcel.ExportData(System.String,System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExportExcel.ExportData(System.String,System.String)] Missing &lt;param name=&quot;strContent&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExportExcel.ExportData(System.String,System.String)] Missing &lt;param name=&quot;FileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ExportExcel.ExportData(System.Web.UI.WebControls.GridView)] Missing &lt;param name=&quot;obj&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileDEncrypt.DecryptFile(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileDEncrypt.EncryptFile(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileDownHelper.GetFileNameExtension(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileDownHelper.GetFileNameExtension(System.String)] Missing &lt;param name=&quot;FileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileDownHelper.GetMapPathFile(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileDownHelper.GetMapPathFile(System.String)] Missing &lt;param name=&quot;FileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.FileOperate] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.DeleteFolder(System.String)] Missing &lt;param name=&quot;dir&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.FileCreate(System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.FileCreate(System.String)] Missing &lt;param name=&quot;Path&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.FolderCreate(System.String)] Missing &lt;param name=&quot;Path&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.GetDirectoryLength(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.GetFileAttibe(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.GetFoldAll(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.GetFoldAll(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.Read_Txt(System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.Read_Txt(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.Read_Txt(System.String)] Missing &lt;param name=&quot;filename&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.ReadFile(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.Write_Txt(System.String,System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.Write_Txt(System.String,System.String)] Missing &lt;param name=&quot;FileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileOperate.Write_Txt(System.String,System.String)] Missing &lt;param name=&quot;Content&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.DeleteFolder(System.String)] Missing &lt;param name=&quot;dir&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.FileCreate(System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.FileCreate(System.String)] Missing &lt;param name=&quot;Path&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.FolderCreate(System.String)] Missing &lt;param name=&quot;Path&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.GetDirectoryLength(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.GetFileAttibe(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.GetFoldAll(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.GetFoldAll(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.ListTreeShow(System.IO.DirectoryInfo,System.Int32,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.Read_Txt(System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.Read_Txt(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.Read_Txt(System.String)] Missing &lt;param name=&quot;filename&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.ReadFile(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.Write_Txt(System.String,System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.Write_Txt(System.String,System.String)] Missing &lt;param name=&quot;FileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileHelper.Write_Txt(System.String,System.String)] Missing &lt;param name=&quot;Content&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileUpHelper.FormatNum(System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileUpHelper.GetUploadFileName] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileUpHelper.UploadFile(System.String,System.Int32,System.String[],System.String,System.Web.UI.HtmlControls.HtmlInputFile)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -241,7 +235,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FileValidation.IsS
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FormulaHelper.SpiltExpression(System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FormulaHelper.SpiltExpression(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FormulaHelper.SpiltExpression(System.String)] Missing &lt;param name=&quot;strExpression&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.FTPClient] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPClient.#ctor(System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;remoteHost&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPClient.#ctor(System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;remotePath&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPClient.#ctor(System.String,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;remoteUser&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -253,7 +246,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPClient.newPutBy
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPClient.newPutByGuid(System.String,System.String)] Missing &lt;param name=&quot;strGuid&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.FTPClient.obj] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPClient.PutByGuid(System.String,System.String)] Missing &lt;param name=&quot;strGuid&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.FTPHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPHelper.AddMSCFile(System.String,System.String,System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPHelper.AddMSCFile(System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;BscInfo&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPHelper.CanConnect] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -270,14 +262,12 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.FTPHelper.PutFile(
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.GridViewExport.Export(System.String,System.Web.UI.WebControls.GridView)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.GridViewExport.Export(System.String,System.Web.UI.WebControls.GridView)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.GridViewExport.Export(System.String,System.Web.UI.WebControls.GridView)] Missing &lt;param name=&quot;gv&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.GridViewHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.GridViewHelper.GridView2DataTable(System.Web.UI.WebControls.GridView)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.GridViewHelper.ToDataTable(System.Collections.IList)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HashDEncrypt.GetRandomValue] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HashDEncrypt.GetSecurity] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HashDEncrypt.HashEncoding(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HashDEncrypt.HashEncoding(System.String)] Missing &lt;param name=&quot;Security&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.HtmlHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HtmlHelper.CSS(System.String,System.Web.UI.Page)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HtmlHelper.CSS(System.String,System.Web.UI.Page)] Missing &lt;param name=&quot;cssPath&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HtmlHelper.CSS(System.String,System.Web.UI.Page)] Missing &lt;param name=&quot;p&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -309,7 +299,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HtmlHelper.Post_Ht
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HtmlHelper.ZipHtml(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.HtmlHelper.ZipHtml(System.String)] Missing &lt;param name=&quot;Html&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ImageDown.SaveUrlPics(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.ImageHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ImageHelper.BWPic(System.Drawing.Bitmap,System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ImageHelper.BWPic(System.Drawing.Bitmap,System.Int32,System.Int32)] Missing &lt;param name=&quot;mybm&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ImageHelper.Compress(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -339,7 +328,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.INIFileHelper.IniR
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.INIFileHelper.IniWriteValue(System.String,System.String,System.String)] Missing &lt;param name=&quot;Section&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.INIFileHelper.IniWriteValue(System.String,System.String,System.String)] Missing &lt;param name=&quot;Key&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.INIFileHelper.IniWriteValue(System.String,System.String,System.String)] Missing &lt;param name=&quot;Value&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.INIFileHelper.path] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.IpHelper.GetUserIp] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JavaScriptHelper.Alert(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JavaScriptHelper.AlertAndGoHistory(System.String,System.Int32)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -389,7 +377,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JavaScriptHelper.S
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JavaScriptHelper.ShowModalDialogJavascript(System.String,System.String)] Missing &lt;param name=&quot;webFormUrl&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JavaScriptHelper.ShowModalDialogJavascript(System.String,System.String)] Missing &lt;param name=&quot;features&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JavaScriptHelper.ShowModalDialogWindow(System.String,System.String)] Missing &lt;param name=&quot;features&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.JsonHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JsonHelper.ListToJson``1(System.Collections.Generic.IList{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JsonHelper.ListToJson``1(System.Collections.Generic.IList{``0})] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.JsonHelper.ListToJson``1(System.Collections.Generic.IList{``0})] Missing &lt;param name=&quot;list&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -417,7 +404,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MailHelper.sendMai
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MailHelper.sendMail(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.Int32,System.String,System.String,System.Boolean,System.String,System.Boolean@)] Missing &lt;param name=&quot;sendOK&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MailHelper.sendMail(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MailHelper.sendMail(System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.String,System.String,System.String,System.Boolean)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.MailSmtpHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.MailSmtpHelper.authorName] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.MailSmtpHelper.pwd] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MailSmtpHelper.SendByConfig(System.String,System.String,System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -436,13 +422,12 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MD5Encrypt.GetFile
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MD5Encrypt.GetFileMD5(System.String)] Missing &lt;param name=&quot;path&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MD5Encrypt.GetStrMD5(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MediaHelper.StopWAV(System.Media.SoundPlayer)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.MessageBox] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBox.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBox.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;page&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBox.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;msg&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBox.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;url&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBox.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;top&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBox.ShowConfirm(System.Web.UI.WebControls.WebControl,System.String)] Missing &lt;param name=&quot;Control&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBoxHelper.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBoxHelper.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;page&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBoxHelper.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;msg&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBoxHelper.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;url&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBoxHelper.ShowAndRedirect(System.Web.UI.Page,System.String,System.String,System.Boolean)] Missing &lt;param name=&quot;top&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.MessageBoxHelper.ShowConfirm(System.Web.UI.WebControls.WebControl,System.String)] Missing &lt;param name=&quot;Control&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.Connect(System.Net.Sockets.Socket,System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.CreateIPEndPoint(System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.CreateTcpListener] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -460,14 +445,12 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.GetValid
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.ReceiveMsg(System.Net.Sockets.Socket)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.SendEmail(System.String,System.String,System.String,System.Boolean)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NetHelper.StringToIPAddress(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.NPOIHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NPOIHelper.Export(System.Data.DataTable,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.NPOIHelper.Import(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageBase.OnInit(System.EventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageBase.PageBase_Error(System.Object,System.EventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageBase.PageBase_Error(System.Object,System.EventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.PageBase.PermissionID] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.PageHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageHelper.GetCurrentPage] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageHelper.GetRelativeLevel] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageHelper.LockPage(System.Web.UI.Page,System.Object[])] Missing &lt;param name=&quot;page&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -532,7 +515,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageValidate.IsPho
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageValidate.IsPhone(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PageValidate.IsPhone(System.String)] Missing &lt;param name=&quot;inputData&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.PDFOperation.SetBaseFont(System.String)] Missing &lt;param name=&quot;path&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.PinYinHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RandomHelper.GenerateCheckCode(System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RandomHelper.GenerateCheckCode(System.Int32)] Missing &lt;param name=&quot;codeCount&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RandomHelper.GenerateCheckCodeNum(System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -619,7 +601,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RSADEncrypt.Signat
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RSADEncrypt.SignatureFormatter(System.String,System.String,System.String@)] Missing &lt;param name=&quot;p_strKeyPrivate&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RSADEncrypt.SignatureFormatter(System.String,System.String,System.String@)] Missing &lt;param name=&quot;m_strHashbyteSignature&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.RSADEncrypt.SignatureFormatter(System.String,System.String,System.String@)] Missing &lt;param name=&quot;m_strEncryptedSignatureData&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.SerializeHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.SerializeHelper.FromBinary``1(System.String)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.SerializeHelper.FromBinary``1(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.SerializeHelper.FromSoap``1(System.String)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -730,7 +711,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.UrlHelper.UpdatePa
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.UrlHelper.UpdateParam(System.String,System.String,System.String)] Missing &lt;param name=&quot;url&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.UrlHelper.UpdateParam(System.String,System.String,System.String)] Missing &lt;param name=&quot;paramName&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.UrlHelper.UpdateParam(System.String,System.String,System.String)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.ValidatorHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ValidatorHelper.checkUserId(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ValidatorHelper.checkUserId(System.String)] Missing &lt;param name=&quot;str&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ValidatorHelper.hasChinese(System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -801,7 +781,6 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VerifyCodeRand.Str
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VerifyCodeRand.Str_char(System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VerifyCodeRand.Str_char(System.Int32)] Missing &lt;param name=&quot;Length&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VerifyCodeRand.Str_char(System.Int32,System.Boolean)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.VideoHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VideoHelper.CatchImg(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VideoHelper.CatchImg(System.String,System.String)] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.VideoHelper.CatchImg(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -824,7 +803,6 @@ BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.VideoHelper.mencod
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.VideoHelper.savefile] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.VideoHelper.sizeOfImg] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [F:HD.Common.VideoHelper.widthOfFile] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.WebClientHelper] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [E:HD.Common.WebClientHelper.DownloadProgressChanged] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.WebClientHelper.GetData(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.WebClientHelper.GetHtml(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
@@ -847,36 +825,34 @@ BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelper.GetAttri
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelper.GetNode(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelper.GetValue(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelper.GetValue(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:HD.Common.XMLProcess] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.#ctor(System.String)] Missing &lt;param name=&quot;strPath&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.DeleteXmlAllRows(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.DeleteXmlRowByIndex(System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.DeleteXmlRowByIndex(System.String,System.Int32)] Missing &lt;param name=&quot;strXmlPath&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.DeleteXmlRows(System.String,System.String,System.String[])] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.GetDataSetByXml(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.GetDataViewByXml(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.Read(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.Read(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.Read(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.ReadAllChild(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.ReadAllChildallValue(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XMLProcess.UpdateXmlRow(System.String,System.String[],System.String[],System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:HD.Common.XMLProcess.XMLPath] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.DeleteXmlAllRows(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.DeleteXmlRowByIndex(System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.DeleteXmlRowByIndex(System.String,System.Int32)] Missing &lt;param name=&quot;strXmlPath&quot;/&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.DeleteXmlRows(System.String,System.String,System.String[])] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.GetDataSetByXml(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.GetDataViewByXml(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.Read(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.Read(System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.Read(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.ReadAllChild(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.ReadAllChildallValue(System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.XmlHelperExt.UpdateXmlRow(System.String,System.String[],System.String[],System.String,System.String)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:HD.Common.XmlHelperExt.XMLPath] Missing &lt;summary&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:HD.Common.ZipHelper.EnZip(System.String,System.String,System.Int32)] Missing &lt;returns&gt; documentation [E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj]
-  Processed 968 topic(s)
-  733 warning(s)
+  Processed 962 topic(s)
+  709 warning(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
 已完成生成项目“E:\Projects\Helper\Doc\Help\Working\BuildReferenceTopics.proj”(默认目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:19.16
-    Last step completed in 00:00:19.3571
+已用时间 00:00:40.43
+    Last step completed in 00:00:40.7073
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0100
+    Last step completed in 00:00:00.0090
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -888,11 +864,11 @@ E-Mail: Eric@EWoodruff.us
 SHFB: Warning SHE0001: LCID &#39;4&#39; not found in configuration file.  Defaulting to ANSI code page value of &#39;936&#39;, encoding charset &#39;gb2312&#39;.
 
 Processing Help 1 files in E:\Projects\Helper\Doc\Help\Working\Output\HtmlHelp1
-Processed 968 HTML files
+Processed 962 HTML files
 Sorting keywords and generating See Also indices
 Saving HTML Help 1 keyword index to E:\Projects\Helper\Doc\Help\Working\Helper帮助文档.hhk
 Saving HTML Help 1 table of contents to E:\Projects\Helper\Doc\Help\Working\Helper帮助文档.hhc
-    Last step completed in 00:00:01.8911
+    Last step completed in 00:00:11.3476
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -959,7 +935,7 @@ D:\Program Files\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS20
 D:\Program Files\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-zh-CN.css -&gt; E:\Projects\Helper\Doc\Help\Working\Output\HtmlHelp1\styles\branding-zh-CN.css
 D:\Program Files\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding-zh-TW.css -&gt; E:\Projects\Helper\Doc\Help\Working\Output\HtmlHelp1\styles\branding-zh-TW.css
 D:\Program Files\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2010\styles\branding.css -&gt; E:\Projects\Helper\Doc\Help\Working\Output\HtmlHelp1\styles\branding.css
-    Last step completed in 00:00:01.0261
+    Last step completed in 00:00:13.4948
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
@@ -971,7 +947,7 @@ Generating HTML Help 1 index file...
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00.0170
+    Last step completed in 00:00:00.0310
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -986,13 +962,13 @@ Compiling HTML Help 1 file...
   
   
   
-  Compile time: 0 minutes, 18 seconds
+  Compile time: 0 minutes, 17 seconds
   
-  970	Topics
+  964	Topics
   
-  9,752	Local links
+  9,690	Local links
   
-  6,068	Internet links
+  6,041	Internet links
   
   0	Graphics
   
@@ -1000,19 +976,19 @@ Compiling HTML Help 1 file...
   
   
   
-  Created e:\Projects\Helper\Doc\Help\Working\Output\HtmlHelp1\Helper帮助文档.chm, 1,251,341 bytes
+  Created e:\Projects\Helper\Doc\Help\Working\Output\HtmlHelp1\Helper帮助文档.chm, 1,244,247 bytes
   
-  Compression decreased file by 8,287,784 bytes.
+  Compression decreased file by 8,246,559 bytes.
   
-    Last step completed in 00:00:35.0120
+    Last step completed in 00:00:23.5393
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.8240
+    Last step completed in 00:00:00.9321
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 10/21/2014 11:25 下午.  Total time: 00:01:02.3736
+Build completed successfully at 10/22/2014 10:56 下午.  Total time: 00:01:44.2940
 
 </buildStep>
 </shfbBuild>
